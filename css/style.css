@@ -1,0 +1,615 @@
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1500px;
+}
+.LangSwitcher .social-li,
+.ka{
+	font-size: 14px;
+	color: #345c64;
+	transition: 0.3s;
+}
+.social-li-fa .fab{
+	transition: 0.3s;
+	font-size: 25px;
+	padding-right: 0;
+
+}
+.ka:hover{
+	text-decoration: inherit;
+	color: #36beb8;
+}
+.social-li-fa{
+	/*margin-right: 20px;*/
+	/* ფეისბუკის მიწევა მარჯვნივ */
+}
+.fixed-top{
+	position: sticky;
+	background-color: #fff;
+	/*padding-top: 21px;*/
+}
+/*.dropdown:hover> .dropdown-menu{
+	margin-top: 41px;
+	display: block;
+}*/
+
+/*.dropdown:hover .dropdown-menu{
+	display: block;
+}*/
+/* dropdown:hover-ის პირველი და მეორე ვარიანტი. თუმცა როცა margin-top-ი მინდა navbar-ისგან დავწიო მაშინ ცუდად მუშაობს, ამიტომ ჯობს ჯავასკრიპტის ვარიანტი. */
+/*navLink.has-subitems.is-hovered+.StickyPanel-subLinks*/
+/*@media all and (min-width: 992px) {*/
+/*	.navbar .nav-item .dropdown-menu{
+		display:block; 
+		opacity: 1;
+		visibility: hidden; 
+		transition:.3s;
+		margin-top:41px;
+	}*/
+	.navbar .nav-item:hover .nav-link{
+		color: #36beb8;
+	}
+	.navbar .nav-item:hover .nav-link::before{
+		content: "";
+		position: absolute;
+		border: .1em solid #36beb8;
+		width: 4.5em;
+		height: 4.5em;
+		margin-top: -1.5em;
+    	margin-left: -.5em;
+	    border-radius: 50%;
+		transform: scale(1);
+		opacity:1;
+	}
+	/*dropdown-menu, dropdown:hover-ის მესამე ვარიანტი ჯავასკრიპტის ვარიანტისგან იმით განსხვავდება, რომ როცა Service-ზე dropdown-menu ჩამოიშლება hover-ი რჩება აქტიური. თუმცა ყველაზე კარგი ვარიანტია, როცა ჯავასკრიპტს ვიყენებ .navbar .nav-item:hover .nav-link-თან ერთად, .navbar .nav-item .dropdown-menu უნდა იყოს გამორთული. თუ მინდა service-ზე მაუსის მიტანისას აგრეთვე დარჩეს როცა dropdown-menu-ზე ჩამოვდივარ უნდა გავააკტიურო .navbar .nav-item:hover .nav-link::after */
+/*	.navbar .dropdown-menu.fade-down{
+		top:80%; 
+		transform: rotateX(-75deg); 
+		transform-origin: 0% 0%;
+	}
+	.navbar .dropdown-menu.fade-up{
+		top:180%;
+	}
+	.navbar .nav-item:hover .dropdown-menu{
+		transition: .3s; 
+		opacity:1; 
+		visibility:visible; 
+		top:100%; 
+		transform: rotateX(0deg);
+	}*/
+/*}*/
+
+/*საბმენიუს ამბები*/
+/*.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}*/
+.dropdown-menu.show {
+  display: block;
+}
+/*საბმენიუს ამბები*/
+
+
+.navigation-a:hover::after{
+	transform: scale(1);
+	opacity:1;
+}
+.circle-services:hover::before{
+	transform: scale(1);
+	opacity:1;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 1.5rem 1rem;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(52,92,100,.85);
+    background-blend-mode: multiply;
+    background-clip: padding-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
+    border-radius: 0.25rem;
+	margin-top: 41px;
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: .7rem 1.5rem;
+    clear: both;
+    font-weight: 600;
+    color: #FFF;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.dropdown-item:hover, .dropdown-item:focus{
+    color: #bdbfc1;
+    text-decoration: none;
+    background-color: transparent;
+}
+/*.dropdown-item.active, .dropdown-item:active{
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+}*/
+
+.logo{
+	width: 100px;
+}
+.social-icon{
+	align-items: center;
+}
+.navigation-a{
+	color: #345c64;
+	text-decoration: inherit;
+	padding: 0 20px;
+	font-size: 18px;
+}
+.navigation-a:hover{
+    color: #36beb8;
+    text-decoration: inherit;
+}
+.circle-about::after{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.5em;
+    margin-left: -3.6em;
+    border-radius: 50%;
+    transform: scale(.2);
+    opacity: 0;
+    transition: transform .3s,opacity .3s;
+}
+.circle-work::after{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.50em;
+    margin-left: -3.4em;
+    border-radius: 50%;
+    transform: scale(.2);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+.circle-branding::after{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.5em;
+    margin-left: -4.25em;
+    border-radius: 50%;
+    transform: scale(.2);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+.circle-clients::after{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.5em;
+    margin-left: -3.75em;
+    border-radius: 50%;
+    transform: scale(.2);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+.circle-services::before{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.5em;
+    margin-left: -.5em;
+    border-radius: 50%;
+    transform: scale(0.2);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+
+.circle-contacts::after{
+	content: "";
+	position: absolute;
+	border: .1em solid #36beb8;
+	width: 4.5em;
+	height: 4.5em;
+	margin-top: -1.5em;
+    margin-left: -4.2em;
+    border-radius: 50%;
+    transform: scale(.2);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+ }
+.social-li{
+	padding-left: 20px;
+	color: #345c64;
+	text-decoration: inherit;
+	font-size: 18px;
+	transition: 0.3s;
+}
+.social-a-num{
+	color: #345c64;
+	text-decoration: inherit;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.social-li,
+.social-a-num:hover{
+	/*padding-left: 20px;*/
+	color: #36beb8;
+	text-decoration: inherit;
+}
+.social-a{
+	color: #36beb8;
+}
+a:hover{
+	color: #353536;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 0;
+    /*margin-right: 1rem; ეს არის ლოგოს სტანდარტული margin-ის ზომა.*/
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.social-a-num{
+	padding-right: 20px;
+}
+span .ka{
+	padding-right: 20px;
+}
+
+.social-li::after{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 1px;
+	background-color: #e6e7e8;
+	top: 0;
+}
+.social-li:nth-child(1)::after,
+.social-li:nth-child(3)::after{
+	display: none;
+}
+.LangSwitcher-en{
+	padding-bottom: .5rem!important;
+}
+
+.banner{
+	background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+  /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");*/
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus{
+  text-decoration: none;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled){
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-toggler:focus{
+	/*color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);*/
+	outline: #000 1px auto;
+	/*outline-offset: 0.3px;*/
+}
+
+/*ძველი არაანიმირებული ბურგერი.
+როგორც კი გავააქტიურებ ეგრევე გადავა თავის საწყის არაანიმირებულ ბურგერზე ისე, რომ წინას წაშლა არ დამჭირდება.*/
+/*button:focus {
+    outline: 20px dotted;
+    outline: 5px auto -webkit-focus-ring-color;*/
+/*ძველი არაანიმირებული ბურგერი*/
+
+/* ანიმირებული ბურგერი*/
+#wrapper {
+	/*background:#0D6FBA;*/
+	display:inline-block;
+	/*border-radius:500px;*/
+	margin: 2px;
+	position: relative;
+  	/*padding:50px;*/
+	cursor:pointer;
+}
+/*.circle {
+	width:100px;
+	height:100px;
+	position:relative;
+}*/
+.line{
+	position: absolute;
+	height: 3px;
+	width: 60%;
+	background: #808080;
+	border-radius: 8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+	transform: translate3d(-86.5%, 0, 0);
+}
+
+/*burger-ის 3 line-ის ერთდროული focus/hover */
+/*.navbar-toggler:focus #line{
+	background-color: #000;
+}*/
+/*burger-ის 3 line-ის ერთდროული focus/hover */
+
+.close:hover {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 1;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  opacity: 1;
+}
+.top {
+	top:24%;
+}
+.middle {
+	top:46.1%;
+}
+.bottom {
+	top:68.3%;
+}
+.icon.close .top {	
+	top:48%;
+	transform: translate3d(-86.5%, 0, 0) rotate(45deg);
+	opacity: 1;
+}
+
+
+.icon.close .middle, .icon.close .bottom {
+	top:48%;
+	transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
+	opacity: 1;
+	z-index: 1;
+}
+.dropdown-toggle::after{
+		/*position: absolute;*/
+		display: inline-block;
+		width: 0;
+		height: 0;
+		margin-left: 0.255em;
+		vertical-align: 0.255em;
+		content: "";
+		border-top: 0.3em solid;
+		border-right: 0.3em solid transparent;
+		border-bottom: 0;
+		border-left: 0.3em solid transparent;
+	}
+/* ანიმირებული ბურგერი*/
+
+/*dropdown-sub-toggler-ი*/
+
+.dropdown-toggle[aria-expanded="true"]:after { transform: rotate(180deg); } /*for the animation*/ .dropdown-toggle:after { transition: 0.3s; }
+
+/*dropdown-sub-toggler-ი*/
+
+@media(min-width: 992px){
+	.dropdown-toggle::after{
+		display: none;
+	}
+}
+
+
+@media(max-width: 992px){
+	.dropdown-menu{
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 1.5rem 1rem;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(52,92,100,.85);
+    background-blend-mode: multiply;
+    background-clip: padding-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
+    border-radius: 0.25rem;
+	margin-top: 41px;
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: .7rem 1.5rem;
+    clear: both;
+    font-weight: 600;
+    color: #FFF;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+	.navigation-li .navigation-a{
+		max-width: 992px;
+		color: #345c64;
+		text-decoration: inherit;
+		padding-left: 0;
+		line-height: 50px;
+		font-size: 18px;
+		opacity:1;
+	}
+	.circle-about::after, .circle-branding::after, .circle-clients::after, 
+	.circle-services::before, .circle-contacts::after{
+		display: none;
+	}
+	
+}
+	
+
+@media(min-width: 992px){
+	.social-toggler{
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.social-fa, .social-num{
+    display: none;
+	}
+}
+@media (max-width: 992px){
+	.social-icon .social-li-fa, .social-icon .social-a-num, .social-icon .social-li::after,.social-icon .LangSwitcher-en, .social-icon .LangSwitcher-ka{
+		display: none;
+	}
+}
+@media (min-width: 320px){
+.flex-lg-row {
+    flex-direction: column;
+	}
+}
+
+
+/*toggler/burger-ის navbar-ი*/
+.social-toggler .d-flex{
+	align-items: center;
+	padding-right: 20px;
+}
+.social-a-num-num.toggler{
+padding-right: 20px;
+}
+span .ka-lang{
+		padding-right: 20px;
+}
+
+.LangSwitcher-lang::before{
+		position: absolute;
+		content: "";
+		height: 110px;
+		width: 1px;
+		background-color: #e6e7e8;
+		top: 0;
+}
+.LangSwitcher-ka::after{
+		position: absolute;
+		content: "";
+		height: 110px;
+		width: 1px;
+		background-color: #e6e7e8;
+		top: 0;
+}
+.LangSwitcher-en-lang.toggler{
+		padding-bottom: .5rem!important;
+}
+.LangSwitcher-lang .social.toggler,
+.ka-lang{
+font-size: 14px;
+color: #345c64;
+transition: 0.3s;
+}
+.fab{
+		transition: 0.3s;
+		font-size: 25px;
+		color: #36beb8;
+		padding-right: 20px;
+}
+.fab:hover{
+	color: #345c64;
+}
+.ka-lang:hover{
+		text-decoration: inherit;
+		color: #36beb8;
+}
+.social.toggler{
+		align-items: center;
+}
+.social.toggler{
+		padding-left: 20px;
+		color: #345c64;
+		text-decoration: inherit;
+		font-size: 18px;
+		transition: 0.3s;
+}
+	.social-a-num-num.toggler{
+	color: #345c64;
+		text-decoration: inherit;
+		font-size: 18px;
+		transition: 0.3s;
+}
+
+.social,
+.social-a-num-num:hover{
+		color: #36beb8;
+		text-decoration: inherit;
+}
+.social-a{
+		color: #36beb8;
+}
+/*toggler/burger-ის navbar-ი*/
+
+
+
+
