@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 ul{
 	list-style: none;
 	margin: 0;
@@ -10,9 +17,13 @@ ul{
 .ka{
 	font-size: 14px;
 	color: #345c64;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .social-li-fa .fab{
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 	font-size: 25px;
 	padding-right: 0;
@@ -27,28 +38,10 @@ ul{
 	/* ფეისბუკის მიწევა მარჯვნივ */
 }
 .fixed-top{
+	position: -webkit-sticky;
 	position: sticky;
 	background-color: #fff;
-	/*padding-top: 21px;*/
 }
-/*.dropdown:hover> .dropdown-menu{
-	margin-top: 41px;
-	display: block;
-}*/
-
-/*.dropdown:hover .dropdown-menu{
-	display: block;
-}*/
-/* dropdown:hover-ის პირველი და მეორე ვარიანტი. თუმცა როცა margin-top-ი მინდა navbar-ისგან დავწიო მაშინ ცუდად მუშაობს, ამიტომ ჯობს ჯავასკრიპტის ვარიანტი. */
-/*navLink.has-subitems.is-hovered+.StickyPanel-subLinks*/
-/*@media all and (min-width: 992px) {*/
-/*	.navbar .nav-item .dropdown-menu{
-		display:block; 
-		opacity: 1;
-		visibility: hidden; 
-		transition:.3s;
-		margin-top:41px;
-	}*/
 	.navbar .nav-item:hover .nav-link{
 		color: #36beb8;
 	}
@@ -61,44 +54,25 @@ ul{
 		margin-top: -1.5em;
     	margin-left: -.5em;
 	    border-radius: 50%;
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		    -ms-transform: scale(1);
+		        transform: scale(1);
 		opacity:1;
 	}
-	/*dropdown-menu, dropdown:hover-ის მესამე ვარიანტი ჯავასკრიპტის ვარიანტისგან იმით განსხვავდება, რომ როცა Service-ზე dropdown-menu ჩამოიშლება hover-ი რჩება აქტიური. თუმცა ყველაზე კარგი ვარიანტია, როცა ჯავასკრიპტს ვიყენებ .navbar .nav-item:hover .nav-link-თან ერთად, .navbar .nav-item .dropdown-menu უნდა იყოს გამორთული. თუ მინდა service-ზე მაუსის მიტანისას აგრეთვე დარჩეს როცა dropdown-menu-ზე ჩამოვდივარ უნდა გავააკტიურო .navbar .nav-item:hover .nav-link::after */
-/*	.navbar .dropdown-menu.fade-down{
-		top:80%; 
-		transform: rotateX(-75deg); 
-		transform-origin: 0% 0%;
-	}
-	.navbar .dropdown-menu.fade-up{
-		top:180%;
-	}
-	.navbar .nav-item:hover .dropdown-menu{
-		transition: .3s; 
-		opacity:1; 
-		visibility:visible; 
-		top:100%; 
-		transform: rotateX(0deg);
-	}*/
-/*}*/
 
-/*საბმენიუს ამბები*/
-/*.navbar-nav .dropdown-menu {
-  position: static;
-  float: none;
-}*/
 .dropdown-menu.show {
   display: block;
 }
-/*საბმენიუს ამბები*/
-
-
 .navigation-a:hover::after{
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	opacity:1;
 }
 .circle-services:hover::before{
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	opacity:1;
 }
 
@@ -135,6 +109,8 @@ ul{
     background-color: transparent;
     border: 0;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .dropdown-item:hover, .dropdown-item:focus{
@@ -142,17 +118,13 @@ ul{
     text-decoration: none;
     background-color: transparent;
 }
-/*.dropdown-item.active, .dropdown-item:active{
-    color: #fff;
-    text-decoration: none;
-    background-color: #007bff;
-}*/
-
 .logo{
 	width: 100px;
 }
 .social-icon{
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .navigation-a{
 	color: #345c64;
@@ -173,9 +145,15 @@ ul{
 	margin-top: -1.5em;
     margin-left: -3.6em;
     border-radius: 50%;
-    transform: scale(.2);
+    -webkit-transform: scale(.2);
+        -ms-transform: scale(.2);
+            transform: scale(.2);
     opacity: 0;
+    -webkit-transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,-webkit-transform .3s;
+    -o-transition: transform .3s,opacity .3s;
     transition: transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s,-webkit-transform .3s;
 }
 .circle-work::after{
 	content: "";
@@ -186,9 +164,15 @@ ul{
 	margin-top: -1.50em;
     margin-left: -3.4em;
     border-radius: 50%;
-    transform: scale(.2);
+    -webkit-transform: scale(.2);
+        -ms-transform: scale(.2);
+            transform: scale(.2);
     opacity: 0;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-branding::after{
 	content: "";
@@ -199,9 +183,15 @@ ul{
 	margin-top: -1.5em;
     margin-left: -4.25em;
     border-radius: 50%;
-    transform: scale(.2);
+    -webkit-transform: scale(.2);
+        -ms-transform: scale(.2);
+            transform: scale(.2);
     opacity: 0;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-clients::after{
 	content: "";
@@ -212,9 +202,15 @@ ul{
 	margin-top: -1.5em;
     margin-left: -3.75em;
     border-radius: 50%;
-    transform: scale(.2);
+    -webkit-transform: scale(.2);
+        -ms-transform: scale(.2);
+            transform: scale(.2);
     opacity: 0;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-services::before{
 	content: "";
@@ -225,9 +221,15 @@ ul{
 	margin-top: -1.5em;
     margin-left: -.5em;
     border-radius: 50%;
-    transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+        -ms-transform: scale(0.2);
+            transform: scale(0.2);
     opacity: 0;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 
 .circle-contacts::after{
@@ -239,27 +241,36 @@ ul{
 	margin-top: -1.5em;
     margin-left: -4.2em;
     border-radius: 50%;
-    transform: scale(.2);
+    -webkit-transform: scale(.2);
+        -ms-transform: scale(.2);
+            transform: scale(.2);
     opacity: 0;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
  }
 .social-li{
 	padding-left: 20px;
 	color: #345c64;
 	text-decoration: inherit;
 	font-size: 18px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .social-a-num{
 	color: #345c64;
 	text-decoration: inherit;
 	font-size: 18px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .social-li,
 .social-a-num:hover{
-	/*padding-left: 20px;*/
 	color: #36beb8;
 	text-decoration: inherit;
 }
@@ -275,7 +286,6 @@ a:hover{
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 0;
-    /*margin-right: 1rem; ეს არის ლოგოს სტანდარტული margin-ის ზომა.*/
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
@@ -311,7 +321,6 @@ span .ka{
 }
 .navbar-light .navbar-toggler-icon {
   background-image: none;
-  /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");*/
 }
 
 .navbar-toggler {
@@ -346,53 +355,26 @@ span .ka{
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-toggler:focus{
-	/*color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);*/
 	outline: #000 1px auto;
-	/*outline-offset: 0.3px;*/
 }
-
-/*ძველი არაანიმირებული ბურგერი.
-როგორც კი გავააქტიურებ ეგრევე გადავა თავის საწყის არაანიმირებულ ბურგერზე ისე, რომ წინას წაშლა არ დამჭირდება.*/
-/*button:focus {
-    outline: 20px dotted;
-    outline: 5px auto -webkit-focus-ring-color;*/
-/*ძველი არაანიმირებული ბურგერი*/
-
-/* ანიმირებული ბურგერი*/
 #wrapper {
-	/*background:#0D6FBA;*/
 	display:inline-block;
-	/*border-radius:500px;*/
 	margin: 2px;
 	position: relative;
-  	/*padding:50px;*/
 	cursor:pointer;
 }
-/*.circle {
-	width:100px;
-	height:100px;
-	position:relative;
-}*/
 .line{
 	position: absolute;
 	height: 3px;
 	width: 60%;
 	background: #808080;
 	border-radius: 8px;
+	-webkit-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+	-o-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
 	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
-	transform: translate3d(-86.5%, 0, 0);
+	-webkit-transform: translate3d(-86.5%, 0, 0);
+	        transform: translate3d(-86.5%, 0, 0);
 }
-
-/*burger-ის 3 line-ის ერთდროული focus/hover */
-/*.navbar-toggler:focus #line{
-	background-color: #000;
-}*/
-/*burger-ის 3 line-ის ერთდროული focus/hover */
-
 .close:hover {
   float: right;
   font-size: 1.5rem;
@@ -418,14 +400,16 @@ span .ka{
 }
 .icon.close .top {	
 	top:48%;
-	transform: translate3d(-86.5%, 0, 0) rotate(45deg);
+	-webkit-transform: translate3d(-86.5%, 0, 0) rotate(45deg);
+	        transform: translate3d(-86.5%, 0, 0) rotate(45deg);
 	opacity: 1;
 }
 
 
 .icon.close .middle, .icon.close .bottom {
 	top:48%;
-	transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
+	-webkit-transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
+	        transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
 	opacity: 1;
 	z-index: 1;
 }
@@ -442,13 +426,8 @@ span .ka{
 		border-bottom: 0;
 		border-left: 0.3em solid transparent;
 	}
-/* ანიმირებული ბურგერი*/
 
-/*dropdown-sub-toggler-ი*/
-
-.dropdown-toggle[aria-expanded="true"]:after { transform: rotate(180deg); } /*for the animation*/ .dropdown-toggle:after { transition: 0.3s; }
-
-/*dropdown-sub-toggler-ი*/
+.dropdown-toggle[aria-expanded="true"]:after { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); } /*for the animation*/ .dropdown-toggle:after { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 
 @media(min-width: 992px){
 	.dropdown-toggle::after{
@@ -491,6 +470,8 @@ span .ka{
     background-color: transparent;
     border: 0;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 	.navigation-li .navigation-a{
@@ -528,14 +509,17 @@ span .ka{
 }
 @media (min-width: 320px){
 .flex-lg-row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 	}
 }
 
-
-/*toggler/burger-ის navbar-ი*/
 .social-toggler .d-flex{
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding-right: 20px;
 }
 .social-a-num-num.toggler{
@@ -568,9 +552,13 @@ span .ka-lang{
 .ka-lang{
 font-size: 14px;
 color: #345c64;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
 transition: 0.3s;
 }
 .fab{
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 		font-size: 25px;
 		color: #36beb8;
@@ -584,19 +572,25 @@ transition: 0.3s;
 		color: #36beb8;
 }
 .social.toggler{
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 }
 .social.toggler{
 		padding-left: 20px;
 		color: #345c64;
 		text-decoration: inherit;
 		font-size: 18px;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 }
 	.social-a-num-num.toggler{
 	color: #345c64;
 		text-decoration: inherit;
 		font-size: 18px;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 }
 
@@ -608,8 +602,3 @@ transition: 0.3s;
 .social-a{
 		color: #36beb8;
 }
-/*toggler/burger-ის navbar-ი*/
-
-
-
-
