@@ -309,20 +309,21 @@ span .ka{
 }
 
 .banner{
-	/*position: relative;*/
+	position: relative;
 	background-attachment: fixed;
 	background-position: center;
     background-size: cover;
-    height: 660px;
+    height: 104vh;
     background-position-y: 0px;
 }
-.banner-logo{
-	/*position: absolute;*/
-	transform: translate3d(11%, -650%, 0);
-}
-.banner-text{
+.banner .banner-logo{
+	transform: translate3d(0, -630%, 0);
 	position: absolute;
-	transform: translate3d(8%, -1520%, 0);
+	padding-bottom: 50px;
+}
+.banner .banner-text{
+	transform: translate3d(20px, -250px, 10px)!important;
+	position: absolute;
 	color: #345c64!important;
 	font-size: 40px;
 	font-family: sans-serif;
