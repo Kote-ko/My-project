@@ -308,25 +308,25 @@ span .ka{
 	padding-bottom: .5rem!important;
 }
 
-.banner{
-	position: relative;
+#parallax-image{
+	background-image: url("../img/01.jpg");
+	height: 700px;
 	background-attachment: fixed;
 	background-position: center;
-    background-size: cover;
-    height: 104vh;
-    background-position-y: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.banner .banner-logo{
-	transform: translate3d(0, -630%, 0);
-	position: absolute;
-	padding-bottom: 50px;
-}
-.banner .banner-text{
-	transform: translate3d(20px, -250px, 10px)!important;
-	position: absolute;
-	color: #345c64!important;
-	font-size: 40px;
+.text-left{
 	font-family: sans-serif;
+	color: #345c64;
+	/*padding-top: 100px;*/
+	padding-left: 30px;
+	font-size: 35px;
+
+}
+.row.logo{
+	padding-left: 30px;
+	padding-top: 40px;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: none;
