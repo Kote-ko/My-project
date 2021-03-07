@@ -334,12 +334,25 @@ span .ka{
 		padding-left: 220px;
 	}
 	.text-left{
-		padding-top: 570px;
+		padding-top: 574px;
+	}
+}
+@media (max-width: 1280px){
+	.row.animation{
+	transform: translate3d(0, 68px, 0);
+	}
+}
+@media (min-width: 1180px){
+	.row.animation{
+	transform: translate3d(0, 68px, 0);
 	}
 }
 @media (max-width: 1080px){
 	.row.logo, .text-left{
 		display: none;
+	}
+	.row.animation{
+	transform: translate3d(0, 230px, 0);
 	}
 }
 a{
@@ -397,6 +410,50 @@ a{
 	text-transform: uppercase;
 	font-size: 50px;
 	font-weight: 400;
+}
+@media(max-width: 1280px){
+	.animation-a-br{
+		color: #39aca7;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 700;
+	}
+	.animation-a-vi{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 700;
+	}
+	.animation-a-pro{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.animation-a-gr{
+		color: #345c64;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 700;
+	}
+	.animation-a-pr{
+		color: #345c64;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.animation-a-so{
+		color: #39aca7;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 700;
+	}
+	.animation-a-ev{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 400;
+	}
 }
 .row.animation{
 	transform: translate3d(0, -50px, 0);
@@ -501,93 +558,93 @@ a{
 }
 @media(max-width: 1280px){
 	.animation.br{
-		transform: translate3d(-2%, -950%, 0);
+		transform: translate3d(-2%, -1011%, 0);
 		animation-name: anim-br;
 		animation-duration: 1.78571s;
     }
     @keyframes anim-br{
     	from{
-    		transform: translate3d(-100%, -950%, 0);
+    		transform: translate3d(-100%, -1011%, 0);
     		}
     	to{
-    		transform: translate3d(-2%, -950%, 0);
+    		transform: translate3d(-2%, -1011%, 0);
     		}
     	}
 	.animation.vi{
-		transform: translate3d(-2%, -970%, 0);
+		transform: translate3d(-2%, -1015%, 0);
 		animation-name: anim-vi;
 		animation-duration: 1.83333s;
 	}
 	@keyframes anim-vi{
 		from{
-			transform: translate3d(-100%, -970%, 0);
+			transform: translate3d(-100%, -1015%, 0);
 			}
 			to{
-			transform: translate3d(-2%, -970%, 0);
+			transform: translate3d(-2%, -1015%, 0);
 		}
 	}
 	.animation.pro{
-		transform: translate3d(-2%, -1334%, 0);
+		transform: translate3d(-2%, -1251%, 0);
 		animation-name: anim-pro;
 		animation-duration: 1.9s;
 	}
 	@keyframes anim-pro{
 		from{
-			transform: translate3d(-110%, -1334%, 0);
+			transform: translate3d(-110%, -1251%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1334%, 0);
+			transform: translate3d(-2%, -1251%, 0);
 		}
 	}
 	.animation.gr{
-		transform: translate3d(-2%, -1008%, 0);
+		transform: translate3d(-2%, -1039%, 0);
 		animation-name: anim-gr;
 		animation-duration: 2s;
 		}
 	@keyframes anim-gr{
 		from{
-			transform: translate3d(-120%, -1008%, 0);
+			transform: translate3d(-120%, -1039%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1008%, 0);
+			transform: translate3d(-2%, -1039%, 0);
 		}
 	}
 	.animation.pr{
-		transform: translate3d(-2%, -1384%, 0);
+		transform: translate3d(-2%, -1276%, 0);
 		animation-name: anim-pr;
 		animation-duration: 2.16667s;
 		}
 	@keyframes anim-pr{
 		from{
-			transform: translate3d(-130%, -1384%, 0);
+			transform: translate3d(-130%, -1276%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1384%, 0);
+			transform: translate3d(-2%, -1276%, 0);
 		}
 	}
 	.animation.so{
-		transform: translate3d(-2%, -1049%, 0);
+		transform: translate3d(-2%, -1058%, 0);
 		animation-duration: 2.5s;
 	}
 	@keyframes anim-so{
 		from{
-			transform: translate3d(-140%, -1049%, 0);
+			transform: translate3d(-140%, -1058%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1049%, 0);
+			transform: translate3d(-2%, -1058%, 0);
 		}
 	}
 	.animation.ev{
-		transform: translate3d(-2%, -1438%, 0);
+		transform: translate3d(-2%, -1303%, 0);
 		animation-name: anim-ev;
 		animation-duration: 3.5s;
 		}
 	@keyframes anim-ev{
 		from{
-			transform: translate3d(-170%, -1438%, 0);
+			transform: translate3d(-170%, -1303%, 0);
 			}
 		to{
-			transform: translate3d(-2%, -1438%, 0);
+			transform: translate3d(-2%, -1303%, 0);
 		}
 	}
 }
@@ -741,39 +798,39 @@ a{
 
 @media(max-width: 992px){
 	.dropdown-menu{
-    position: relative;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: 0;
-    margin: 0 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: rgb(255 255 255);
-    background-blend-mode: multiply;
-    background-clip: padding-box;
-    border: 1px solid rgb(255 255 255);
-    border-radius: 0.25rem;
-	/*margin-top: 41px;*/
+    	position: relative;
+    	top: 100%;
+    	left: 0;
+    	z-index: 1000;
+    	display: none;
+    	float: left;
+    	min-width: 10rem;
+    	padding: 0;
+    	margin: 0 0 0;
+    	font-size: 1rem;
+    	color: #212529;
+    	text-align: left;
+    	list-style: none;
+    	background-color: rgb(255 255 255);
+    	background-blend-mode: multiply;
+    	background-clip: padding-box;
+    	border: 1px solid rgb(255 255 255);
+    	border-radius: 0.25rem;
+		/*margin-top: 41px;*/
 	}
 	.dropdown-item{
-    display: block;
-    width: 100%;
-    padding: .7rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #345c64;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    text-transform: lowercase;
-    transition: 0.3s;
+    	display: block;
+    	width: 100%;
+    	padding: .7rem 1.5rem;
+    	clear: both;
+    	font-weight: 400;
+    	color: #345c64;
+    	text-align: inherit;
+    	white-space: nowrap;
+    	background-color: transparent;
+    	border: 0;
+    	text-transform: lowercase;
+    	transition: 0.3s;
 	}
 	.navigation-li{
 		border-top: 2px solid #e6e7e8;
@@ -804,7 +861,6 @@ a{
 	.circle-services::before, .circle-contacts::after{
 		display: none;
 	}
-	
 }
 	
 
@@ -822,6 +878,140 @@ a{
 @media (max-width: 992px){
 	.social-icon .social-li-fa, .social-icon .social-a-num, .social-icon .social-li::after,.social-icon .LangSwitcher-en, .social-icon .LangSwitcher-ka{
 		display: none;
+	}
+}
+@media (max-width: 360px){
+	.animation-a-br{
+		color: #39aca7;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.animation-a-vi{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.animation-a-pro{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.animation-a-gr{
+		color: #345c64;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.animation-a-pr{
+		color: #345c64;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.animation-a-so{
+		color: #39aca7;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.animation-a-ev{
+		color: #8aac8f;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.animation.br{
+		transform: translate3d(-2%, -1209%, 0);
+		animation-name: anim-br;
+		animation-duration: 1.78571s;
+    }
+    @keyframes anim-br{
+    	from{
+    		transform: translate3d(-100%, -1209%, 0);
+    		}
+    	to{
+    		transform: translate3d(-2%, -1209%, 0);
+    		}
+    	}
+	.animation.vi{
+		transform: translate3d(-2%, -1015%, 0);
+		animation-name: anim-vi;
+		animation-duration: 1.83333s;
+	}
+	@keyframes anim-vi{
+		from{
+			transform: translate3d(-100%, -1015%, 0);
+			}
+			to{
+			transform: translate3d(-2%, -1015%, 0);
+		}
+	}
+	.animation.pro{
+		transform: translate3d(-2%, -1251%, 0);
+		animation-name: anim-pro;
+		animation-duration: 1.9s;
+	}
+	@keyframes anim-pro{
+		from{
+			transform: translate3d(-110%, -1251%, 0);
+		}
+		to{
+			transform: translate3d(-2%, -1251%, 0);
+		}
+	}
+	.animation.gr{
+		transform: translate3d(-2%, -1039%, 0);
+		animation-name: anim-gr;
+		animation-duration: 2s;
+		}
+	@keyframes anim-gr{
+		from{
+			transform: translate3d(-120%, -1039%, 0);
+		}
+		to{
+			transform: translate3d(-2%, -1039%, 0);
+		}
+	}
+	.animation.pr{
+		transform: translate3d(-2%, -1276%, 0);
+		animation-name: anim-pr;
+		animation-duration: 2.16667s;
+		}
+	@keyframes anim-pr{
+		from{
+			transform: translate3d(-130%, -1276%, 0);
+		}
+		to{
+			transform: translate3d(-2%, -1276%, 0);
+		}
+	}
+	.animation.so{
+		transform: translate3d(-2%, -1058%, 0);
+		animation-duration: 2.5s;
+	}
+	@keyframes anim-so{
+		from{
+			transform: translate3d(-140%, -1058%, 0);
+		}
+		to{
+			transform: translate3d(-2%, -1058%, 0);
+		}
+	}
+	.animation.ev{
+		transform: translate3d(-2%, -1303%, 0);
+		animation-name: anim-ev;
+		animation-duration: 3.5s;
+		}
+	@keyframes anim-ev{
+		from{
+			transform: translate3d(-170%, -1303%, 0);
+			}
+		to{
+			transform: translate3d(-2%, -1303%, 0);
+		}
 	}
 }
 @media (min-width: 320px){
