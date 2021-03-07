@@ -884,47 +884,50 @@ a{
 	.animation-a-br{
 		color: #39aca7;
 		text-transform: uppercase;
-		font-size: 30px;
+		font-size: 35px;
 		font-weight: 700;
 	}
 	.animation-a-vi{
 		color: #8aac8f;
 		text-transform: uppercase;
-		font-size: 30px;
+		font-size: 35px;
 		font-weight: 700;
 	}
 	.animation-a-pro{
 		color: #8aac8f;
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 400;
 	}
 	.animation-a-gr{
 		color: #345c64;
 		text-transform: uppercase;
-		font-size: 30px;
+		font-size: 35px;
 		font-weight: 700;
 	}
 	.animation-a-pr{
 		color: #345c64;
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 400;
 	}
 	.animation-a-so{
 		color: #39aca7;
 		text-transform: uppercase;
-		font-size: 30px;
+		font-size: 35px;
 		font-weight: 700;
 	}
 	.animation-a-ev{
 		color: #8aac8f;
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 400;
 	}
+	.row.animation{
+		transform: translate3d(0, -17px, 0);
+	}
 	.animation.br{
-		transform: translate3d(-2%, -928%, 0);
+		transform: translate3d(-4%, -928%, 0);
 		animation-name: anim-br;
 		animation-duration: 1.78571s;
     }
@@ -933,11 +936,11 @@ a{
     		transform: translate3d(-100%, -928%, 0);
     		}
     	to{
-    		transform: translate3d(-2%, -928%, 0);
+    		transform: translate3d(-4%, -928%, 0);
     		}
     	}
 	.animation.vi{
-		transform: translate3d(-2%, -964%, 0);
+		transform: translate3d(-4%, -964%, 0);
 		animation-name: anim-vi;
 		animation-duration: 1.83333s;
 	}
@@ -946,11 +949,11 @@ a{
 			transform: translate3d(-100%, -964%, 0);
 			}
 			to{
-			transform: translate3d(-2%, -964%, 0);
+			transform: translate3d(-4%, -964%, 0);
 		}
 	}
 	.animation.pro{
-		transform: translate3d(-2%, -1017%, 0);
+		transform: translate3d(-4%, -1017%, 0);
 		animation-name: anim-pro;
 		animation-duration: 1.9s;
 	}
@@ -959,11 +962,11 @@ a{
 			transform: translate3d(-110%, -1017%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1017%, 0);
+			transform: translate3d(-4%, -1017%, 0);
 		}
 	}
 	.animation.gr{
-		transform: translate3d(-2%, -1053%, 0);
+		transform: translate3d(-4%, -1053%, 0);
 		animation-name: anim-gr;
 		animation-duration: 2s;
 		}
@@ -972,11 +975,11 @@ a{
 			transform: translate3d(-120%, -1053%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1053%, 0);
+			transform: translate3d(-4%, -1053%, 0);
 		}
 	}
 	.animation.pr{
-		transform: translate3d(-2%, -1105%, 0);
+		transform: translate3d(-4%, -1105%, 0);
 		animation-name: anim-pr;
 		animation-duration: 2.16667s;
 		}
@@ -985,11 +988,11 @@ a{
 			transform: translate3d(-130%, -1105%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1105%, 0);
+			transform: translate3d(-4%, -1105%, 0);
 		}
 	}
 	.animation.so{
-		transform: translate3d(-2%, -1144%, 0);
+		transform: translate3d(-4%, -1144%, 0);
 		animation-duration: 2.5s;
 	}
 	@keyframes anim-so{
@@ -997,11 +1000,11 @@ a{
 			transform: translate3d(-140%, -1144%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1144%, 0);
+			transform: translate3d(-4%, -1144%, 0);
 		}
 	}
 	.animation.ev{
-		transform: translate3d(-2%, -1191%, 0);
+		transform: translate3d(-4%, -1191%, 0);
 		animation-name: anim-ev;
 		animation-duration: 3.5s;
 		}
@@ -1010,7 +1013,7 @@ a{
 			transform: translate3d(-170%, -1191%, 0);
 			}
 		to{
-			transform: translate3d(-2%, -1191%, 0);
+			transform: translate3d(-4%, -1191%, 0);
 		}
 	}
 }
