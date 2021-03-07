@@ -924,93 +924,93 @@ a{
 		font-weight: 400;
 	}
 	.animation.br{
-		transform: translate3d(-2%, -1209%, 0);
+		transform: translate3d(-2%, -928%, 0);
 		animation-name: anim-br;
 		animation-duration: 1.78571s;
     }
     @keyframes anim-br{
     	from{
-    		transform: translate3d(-100%, -1209%, 0);
+    		transform: translate3d(-100%, -928%, 0);
     		}
     	to{
-    		transform: translate3d(-2%, -1209%, 0);
+    		transform: translate3d(-2%, -928%, 0);
     		}
     	}
 	.animation.vi{
-		transform: translate3d(-2%, -1015%, 0);
+		transform: translate3d(-2%, -964%, 0);
 		animation-name: anim-vi;
 		animation-duration: 1.83333s;
 	}
 	@keyframes anim-vi{
 		from{
-			transform: translate3d(-100%, -1015%, 0);
+			transform: translate3d(-100%, -964%, 0);
 			}
 			to{
-			transform: translate3d(-2%, -1015%, 0);
+			transform: translate3d(-2%, -964%, 0);
 		}
 	}
 	.animation.pro{
-		transform: translate3d(-2%, -1251%, 0);
+		transform: translate3d(-2%, -1017%, 0);
 		animation-name: anim-pro;
 		animation-duration: 1.9s;
 	}
 	@keyframes anim-pro{
 		from{
-			transform: translate3d(-110%, -1251%, 0);
+			transform: translate3d(-110%, -1017%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1251%, 0);
+			transform: translate3d(-2%, -1017%, 0);
 		}
 	}
 	.animation.gr{
-		transform: translate3d(-2%, -1039%, 0);
+		transform: translate3d(-2%, -1053%, 0);
 		animation-name: anim-gr;
 		animation-duration: 2s;
 		}
 	@keyframes anim-gr{
 		from{
-			transform: translate3d(-120%, -1039%, 0);
+			transform: translate3d(-120%, -1053%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1039%, 0);
+			transform: translate3d(-2%, -1053%, 0);
 		}
 	}
 	.animation.pr{
-		transform: translate3d(-2%, -1276%, 0);
+		transform: translate3d(-2%, -1105%, 0);
 		animation-name: anim-pr;
 		animation-duration: 2.16667s;
 		}
 	@keyframes anim-pr{
 		from{
-			transform: translate3d(-130%, -1276%, 0);
+			transform: translate3d(-130%, -1105%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1276%, 0);
+			transform: translate3d(-2%, -1105%, 0);
 		}
 	}
 	.animation.so{
-		transform: translate3d(-2%, -1058%, 0);
+		transform: translate3d(-2%, -1144%, 0);
 		animation-duration: 2.5s;
 	}
 	@keyframes anim-so{
 		from{
-			transform: translate3d(-140%, -1058%, 0);
+			transform: translate3d(-140%, -1144%, 0);
 		}
 		to{
-			transform: translate3d(-2%, -1058%, 0);
+			transform: translate3d(-2%, -1144%, 0);
 		}
 	}
 	.animation.ev{
-		transform: translate3d(-2%, -1303%, 0);
+		transform: translate3d(-2%, -1191%, 0);
 		animation-name: anim-ev;
 		animation-duration: 3.5s;
 		}
 	@keyframes anim-ev{
 		from{
-			transform: translate3d(-170%, -1303%, 0);
+			transform: translate3d(-170%, -1191%, 0);
 			}
 		to{
-			transform: translate3d(-2%, -1303%, 0);
+			transform: translate3d(-2%, -1191%, 0);
 		}
 	}
 }
