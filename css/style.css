@@ -375,7 +375,7 @@ span .ka{
 .slick-slider{
 	position: relative;
 	display: flex;
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 .slick-slider .items{
 	width: 350px;
@@ -627,10 +627,30 @@ a{
 		font-size: 8vw;
 	}
 	.animation-a-ev{
-		font-size: 5.5vw;
+		font-size: 5vw;
 	}
  }
 @media(max-width: 768px){
+	.social-fa, .social-num{
+    	display: none;
+	}
+	.text-p{
+		font-family: sans-serif;
+		color: #606062;
+		padding-top: 60px;
+		padding-left: 60px;
+		padding-top: 30px;
+		padding-right: 50px;
+		font-size: 20px;
+	}
+	.text-left1{
+		font-family: sans-serif;
+		color: #fff;
+		padding-top: 60px;
+		padding-left: 60px;
+		font-size: 5.5vw;
+		font-weight: 600;
+	}
 	.text-right{
 		line-height: 1;
 	}
@@ -671,33 +691,61 @@ a{
 	}
 }
 @media(max-width: 360px){
+	.text-left1{
+		padding-top: 60px;
+		padding-left: 17px;
+		font-size: 6.5vw;
+	}
+	.text-p{
+		padding-left: 17px;
+		padding-top: 12px;
+		padding-right: 22px;
+		font-size: 20px;
+	}
+	.slick-slider{
+		display: flex;
+		margin-top: -2vh;
+	}
+	.animation-a-br{
+		font-size: 9vw;
+	}
+	.animation-a-vi{
+		font-size: 9vw;
+	}
+	.animation-a-pro{
+		font-size: 6.8vw;
+	}
+	.animation-a-gr{
+		font-size: 9vw;
+	}
+	.animation-a-pr{
+		color: #345c64;
+		font-size: 6.8vw;
+	}
+	.animation-a-so{
+		font-size: 9vw;
+	}
+	.animation-a-ev{
+		font-size: 5.3vw;
+	}
 	.slogan{
 		padding-left: 18px!important;
 		padding-right: 25px!important;
 		padding-top: 30px!important;
 		padding-bottom: 20px!important;
-		box-sizing: border-box!important;
-		background-color: #e6e7e8!important;
 		font-size: 18px!important;
-		font-family: sans-serif!important;
 	}
-/*	.slogan h2{
-		font-size: 20px!important;
-		margin-left: -14px!important;
-		width: max-content!important;
-		font-weight: 600!important;
-	}*/
 	.text-right{
-		line-height: 0.5;
+		line-height: 0.6;
 	}
 	.text-animation{
-		padding-top: 11rem;
+		padding-top: 9rem;
 	}
 }
 @media(max-width: 1280px){
 		.slick-slider{
 			display: flex;
-			padding-top: 40px!important;
+			padding-top: 4.268943436499466vh!important;
 		}
 }
 .navbar-light .navbar-toggler-icon {
@@ -927,28 +975,6 @@ a{
 		padding-left: 0;
 		padding-right: 0;
 		margin-top: -1px;
-	}
-}
-@media (max-width: 768px) {
-	.social-fa, .social-num{
-    display: none;
-	}
-	.text-p{
-		font-family: sans-serif;
-		color: #606062;
-		padding-top: 60px;
-		padding-left: 60px;
-		padding-top: 30px;
-		padding-right: 50px;
-		font-size: 20px;
-	}
-	.text-left1{
-		font-family: sans-serif;
-		color: #fff;
-		padding-top: 60px;
-		padding-left: 60px;
-		font-size: 5.5vw;
-		font-weight: 600;
 	}
 }
 @media (min-width: 320px){
