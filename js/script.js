@@ -19,14 +19,14 @@ $(function () {
   		 slidesToScroll: 1,
   		 arrows: true,
   		 autoplay: true,
-  		 autoplaySpeed: 100000,
+  		 autoplaySpeed: 1000,
   		 speed: 2500,
   		 dots: false,
   		 prevArrow: ".arrow-prev",
   		 nextArrow: ".arrow-next",
   		 responsive: [
     {
-      breakpoint: 1040,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 3,
@@ -35,7 +35,7 @@ $(function () {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 760,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 2
