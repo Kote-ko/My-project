@@ -6,13 +6,14 @@ $(document).ready(function(){
     });  
 });
 
-
+// burger
 $("#wrapper").click( function() {
   $(".icon").toggleClass("close");
 });
+// burger
 
 
-
+// slick-slider (carousel)
 $(function () {
 	$('.multiple-items').slick({
   		 slidesToShow: 4,
@@ -29,7 +30,7 @@ $(function () {
       breakpoint: 1280,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: false
       }
@@ -38,14 +39,14 @@ $(function () {
       breakpoint: 760,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 2
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -54,10 +55,25 @@ $(function () {
   ]
 	});
 });
+// slick-slider (carousel)
 
 
-// $('.item').mousemove(function(e) {
-// 	$(this).children('a').children('img').animate({ height: '250', width: '350'} 100);
-// }).mouseleave(function(e) {
-// 	$(this).children('a').children('img').animate({ height: '90%', width: '90%'} 100);
-// });
+/* animation text opacity*/
+// var wrapper = document.getElementsByClassName("text-left-1")[0];
+// wrapper.style.opacity="1";
+// wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
+
+// var spans = wrapper.getElementsByTagName("span");
+
+// for(var i=0;i<spans.length;i++){
+//   spans[i].style.animationDelay = i*80+"ms";
+// } 
+/* animation text opacity*/
+
+
+
+/* animation on scroll*/
+ScrollOut({
+	targets: "h2,.sign-anim"
+})
+/* animation on scroll*/
