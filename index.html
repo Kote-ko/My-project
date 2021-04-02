@@ -17,12 +17,12 @@
 </head>
 <body>
   <header id="navigation" class="container-max-fluid fixed-top">
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-xl navbar-light">
       <!-- თუ მინდა შევცვალო toggler-ის გამოჩენის რეზოლუცია navbar-expand-lg-ის ნაცვლად ვწერ xl-ს...-->
 			<div class="container">
 				<a class="navbar-brand" href="#"><img class="logo" src="img/mediaart logo.svg"></a>
 	<!-- toggler/burger-ის navbar-ი -->
-    <nav class="social-toggler ml-auto">
+    <nav class="social-toggler d-flex ml-auto">
      <!-- როცა მინდა navbar-ის რაიმე ელემენტი toggler-ის გვერდით იყოს და არა ცენტრში ვამატებ ml-auto-ს. აგრეთვე როცა მინდა toggler-ის გვერდით რაიმე ელემენტი დავამატო toggler-ის გამოჩენის რეზოლუციის ცვლილებისას, social-toggler ml-auto-ს ვამატებ d-flex-ს. შემდეგ navbar-ში გამეორებულ ელემენტს დავმალავ @media-ას მეშვეობით.-->
       <ul class="social-toggler d-flex flex-md-row toggler">
         <li class="social-fa toggler">
@@ -55,10 +55,13 @@
 	     </div>
 	</div>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navigation d-flex flex-lg-row flex-md-column flex-sm-column mx-auto roboto-font">
+		<ul class="navigation d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column mx-auto roboto-font">
 			<li class="navigation-li">
 				<a href="#" class="navigation-a circle-about">About</a>
 			</li>
+      <li class="navigation-li">
+        <a href="#" class="navigation-a circle-work">Work</a>
+      </li>
 			<li class="navigation-li">
 				<a href="#" class="navigation-a circle-branding">Branding</a>
 			</li>
@@ -127,26 +130,31 @@
         <div class="col-xl-5 col-lg-5 col-md-12 advertising">
            <img src="img/02 copy.jpg">
         </div>
-         <div class="col-xl-7 col-lg-7 col-md-12 slogan">
+        <div class="col-xl-7 col-lg-7 col-md-12">
+        	<div class="container slogan">
+         		<div class="slogan">
            <h2 class="text-right">Advertising Agency Media Art</h2>
            <p class="Advertising-text">The history of Media Art begins since 2002, over 18 years has been successful in the Georgian advertising market and retains the place of honor, which is due to many years of experience, professional team, innovative and creative vision. Our goal is to provide fast, fully integrated services, to provide quality in every aspect.</p>
             <p class="Advertising-text1">Permanent learning and development allow us to properly determine the needs of your brand’s visual or verbal identity, create an idea and bring to your customers to according to modern requirements.</p>
           <p class="Advertising-text2">The “Media Arts” feature is a constantly updated and improved service. We create advertisements for you!</p>
+          		</div>
+           </div>
         </div>
       </div>
   </section>
-    <section id="parallax-image1">
-      <div class="row 1">
-        <div class="col-md-12 align-self-left1">
-          <h2 class="text-left1">Ideas that grow brands</h2>
+    <section id="parallax-image-1">
+    <div class="container image-text">
+      <div class="row-1">
+        <div class="col-md-12 align-self-left-1">
+          <h2 class="text-left-1" data-text="Ideas‎&#160that&#160grow‎&#160brands">Ideas that grow brands</h2>
         </div>
-        <div class="col-md-12 align-self-left1">
+        <div class="col-md-12 align-self-left-1">
           <p class="text-p">The prospect of a growing Media Art success is based on innovative trends of service, which, in turn, is equipped with effective management and team of professionals</p>
         </div>
       </div>
+     </div>
     <div class="container slick">
       <div class="row slick-slider">
-
         <div class="col-lg-12">
       			<div class="slick-slider multiple-items">
       				<div class="items">
@@ -198,11 +206,28 @@
       </div>
   	</div>
   </section>
+  <section id="slogan-1" class="slogan-1">
+    <div class="container slogan-1">
+      <div class="row slogan-1">
+        <div class="col-xl-2 col-lg-2 col-md-12 sign-anim"><img src="img/mediaart sign.png"></div>
+    
+        <div class="col-xl-10 col-lg-10 col-md-12 cta-text">
+          <h2 class="cta-textline prof">The professionalism of our team and many years of experience in</h2>
+          <h2 class="cta-textline adver">the advertising market is undoubtedly successful for your business</h2>
+          <h2 class="cta-textline-1 prof">The professionalism of our team and many years</h2>
+          <h2 class="cta-textline-1 adver">experience in the advertising market is</h2>
+          <h2 class="cta-textline-1 und">undoubtedly successful for your business</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
     		
 <script src="js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/scroll-out.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <!-- სკრიპტების თანმიმდევრობა უნდა იყოს დაცული. bootstrap.min.js popper.min.js-ის ზევით იყო და dropdown-ი არ მუშაობდა! -->
 
