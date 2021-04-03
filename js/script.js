@@ -22,21 +22,20 @@ $(function () {
   		 autoplay: true,
   		 autoplaySpeed: 1000,
   		 speed: 2500,
+       infinite: true,
   		 dots: false,
   		 prevArrow: ".arrow-prev",
   		 nextArrow: ".arrow-next",
   		 responsive: [
     {
-      breakpoint: 1280,
+      breakpoint: 1080,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 760,
+      breakpoint: 850,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -48,7 +47,15 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1
       }
+    },
+    {
+      breakpoint: 414,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     }
+
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
@@ -58,12 +65,22 @@ $(function () {
 // slick-slider (carousel)
 
 
+/* animation text opacity*/
+// var wrapper = document.getElementsByClassName("text-left-1")[0];
+// wrapper.style.opacity="1";
+// wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
+
+// var spans = wrapper.getElementsByTagName("span");
+
+// for(var i=0;i<spans.length;i++){
+//   spans[i].style.animationDelay = i*80+"ms";
+// } 
+/* animation text opacity*/
 
 
 
-
-// animation on scroll
+/* animation on scroll*/
 ScrollOut({
 	targets: "h2,.sign-anim"
 })
-// animation on scroll
+/* animation on scroll*/
