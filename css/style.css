@@ -1,6 +1,6 @@
 body{
 	/*width: 100%;*/
-	overflow-x: hidden;
+	overflow-x: hidden!important;
 	/* width: 100% მჭირდება ჰორიზონტალური სქროლის გამოსავლენად, overflow-x: hidden მჭირდება ჰორიზონტალური სქროლის ასარიდებლად */
 }
 ul{
@@ -624,6 +624,11 @@ a{
 		padding-left: 42px!important;
 	}
 }
+@media(max-width: 575px){
+	.navigation.d-flex{
+		flex-direction: column;
+	}
+}
 @media(min-width: 1199px){
 	.social-toggler li,
 	.LangSwitcher-lang.toggler{
@@ -634,6 +639,82 @@ a{
  	.social-icon .social-li-fa, .social-icon .social-a-num, .social-icon
 	.social-li::after, .social-icon .LangSwitcher-en, .social-icon 
 	.LangSwitcher-ka{
+		display: none;
+	}
+	.dropdown-toggle::after{
+		/*position: absolute;*/
+		display: inline-block!important;
+		width: 0!important;
+		height: 0!important;
+		margin-left: 0.255em!important;
+		vertical-align: 0.255em!important;
+		content: ""!important;
+		border-top: 0.3em solid!important;
+		border-right: 0.3em solid transparent!important;
+		border-bottom: 0!important;
+		border-left: 0.3em solid transparent!important;
+	}
+	.dropdown-menu{
+    	position: relative;
+    	top: 100%;
+    	left: 0;
+    	z-index: 1000;
+    	display: none;
+    	float: left;
+    	min-width: 10rem;
+    	padding: 0;
+    	margin: 0 0 0;
+    	font-size: 1rem;
+    	color: #212529;
+    	text-align: left;
+    	list-style: none;
+    	background-color: rgb(255 255 255);
+    	background-blend-mode: multiply;
+    	background-clip: padding-box;
+    	border: 1px solid rgb(255 255 255);
+    	border-radius: 0.25rem;
+	}
+	.dropdown-item{
+    	display: block;
+    	width: 100%;
+    	padding: .7rem 1.5rem;
+    	clear: both;
+    	font-weight: 400;
+    	color: #345c64;
+    	text-align: inherit;
+    	white-space: nowrap;
+    	background-color: transparent;
+    	border: 0;
+    	text-transform: lowercase;
+    	transition: 0.3s;
+	}
+	.navigation-li{
+		border-top: 2px solid #e6e7e8;
+	}
+	.navbar-collapse{
+		margin-top: 6px;
+	}
+	.navigation-li:nth-child(2),
+	.navigation-li:nth-child(3),
+	.navigation-li:nth-child(4),
+	.navigation-li:nth-child(5),
+	.navigation-li:nth-child(6){
+		border-top: 1px solid #e6e7e8;
+	}
+	.navigation-li .navigation-a{
+		max-width: 992px;
+		color: #345c64;
+		text-decoration: inherit;
+		padding-left: 0;
+		line-height: 3;
+		font-size: 18px;
+		opacity:1;
+	}
+	.navigation-li .navigation-a:hover{
+		color: #36beb8;
+	}
+	.circle-about::after, .circle-branding::after, .circle-clients::after, 
+	.circle-services::before, .circle-contacts::after, .circle-work::after{
 		display: none;
 	}
 
@@ -1378,19 +1459,6 @@ a{
 	opacity: 1;
 	z-index: 1;
 }
-.dropdown-toggle::after{
-		/*position: absolute;*/
-		display: inline-block;
-		width: 0;
-		height: 0;
-		margin-left: 0.255em;
-		vertical-align: 0.255em;
-		content: "";
-		border-top: 0.3em solid;
-		border-right: 0.3em solid transparent;
-		border-bottom: 0;
-		border-left: 0.3em solid transparent;
-	}
 /* ანიმირებული ბურგერი*/
 
 /*dropdown-sub-toggler-ი*/
@@ -1412,7 +1480,7 @@ a{
 }
 
 @media(max-width: 991px){
-	.dropdown-menu{
+/*	.dropdown-menu{
     	position: relative;
     	top: 100%;
     	left: 0;
@@ -1474,7 +1542,7 @@ a{
 	.circle-about::after, .circle-branding::after, .circle-clients::after, 
 	.circle-services::before, .circle-contacts::after, .circle-work::after{
 		display: none;
-	}
+	}*/
 	.advertising img{
 		display: none!important;
 	}
