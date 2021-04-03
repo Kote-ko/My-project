@@ -17,7 +17,7 @@ $("#wrapper").click( function() {
 $(function () {
 	$('.multiple-items').slick({
   		 slidesToShow: 4,
-  		 slidesToScroll: 1,
+  		 slidesToScroll: 4,
   		 arrows: true,
   		 autoplay: true,
   		 autoplaySpeed: 1000,
