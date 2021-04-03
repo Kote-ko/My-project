@@ -62,3 +62,8 @@ $(function () {
 
 
 
+// animation on scroll
+ScrollOut({
+	targets: "h2,.sign-anim"
+})
+// animation on scroll
