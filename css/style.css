@@ -1,12 +1,7 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-body{
+html, body{
+	/*width: 100%;*/
 	overflow-x: hidden!important;
+	/* width: 100% მჭირდება ჰორიზონტალური სქროლის გამოსავლენად, overflow-x: hidden მჭირდება ჰორიზონტალური სქროლის გასაუქმებლად */
 }
 ul{
 	list-style: none;
@@ -23,13 +18,9 @@ ul{
 .ka{
 	font-size: 14px;
 	color: #345c64;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .social-li-fa .fab{
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 	font-size: 25px;
 	padding-right: 0;
@@ -39,12 +30,33 @@ ul{
 	text-decoration: inherit;
 	color: #36beb8;
 }
-
+.social-li-fa{
+	/*margin-right: 20px;*/
+	/* ფეისბუკის მიწევა მარჯვნივ */
+}
 .fixed-top{
-	position: -webkit-sticky;
 	position: sticky;
 	background-color: #fff;
+	/*padding-top: 21px;*/
 }
+/*.dropdown:hover> .dropdown-menu{
+	margin-top: 41px;
+	display: block;
+}*/
+
+/*.dropdown:hover .dropdown-menu{
+	display: block;
+}*/
+/* dropdown:hover-ის პირველი და მეორე ვარიანტი. თუმცა როცა margin-top-ი მინდა navbar-ისგან დავწიო მაშინ ცუდად მუშაობს, ამიტომ ჯობს ჯავასკრიპტის ვარიანტი. */
+/*navLink.has-subitems.is-hovered+.StickyPanel-subLinks*/
+/*@media all and (min-width: 992px) {*/
+/*	.navbar .nav-item .dropdown-menu{
+		display:block; 
+		opacity: 1;
+		visibility: hidden; 
+		transition:.3s;
+		margin-top:41px;
+	}*/
 	.navbar .nav-item:hover .nav-link{
 		color: #36beb8;
 	}
@@ -57,27 +69,44 @@ ul{
 		margin-top: -1.5em;
     	margin-left: -.5em;
 	    border-radius: 50%;
-		-webkit-transform: scale(1);
-		    -ms-transform: scale(1);
-		        transform: scale(1);
+		transform: scale(1);
 		opacity:1;
 	}
+	/*dropdown-menu, dropdown:hover-ის მესამე ვარიანტი ჯავასკრიპტის ვარიანტისგან იმით განსხვავდება, რომ როცა Service-ზე dropdown-menu ჩამოიშლება hover-ი რჩება აქტიური. თუმცა ყველაზე კარგი ვარიანტია, როცა ჯავასკრიპტს ვიყენებ .navbar .nav-item:hover .nav-link-თან ერთად, .navbar .nav-item .dropdown-menu უნდა იყოს გამორთული. თუ მინდა service-ზე მაუსის მიტანისას აგრეთვე დარჩეს როცა dropdown-menu-ზე ჩამოვდივარ უნდა გავააკტიურო .navbar .nav-item:hover .nav-link::after */
+/*	.navbar .dropdown-menu.fade-down{
+		top:80%; 
+		transform: rotateX(-75deg); 
+		transform-origin: 0% 0%;
+	}
+	.navbar .dropdown-menu.fade-up{
+		top:180%;
+	}
+	.navbar .nav-item:hover .dropdown-menu{
+		transition: .3s; 
+		opacity:1; 
+		visibility:visible; 
+		top:100%; 
+		transform: rotateX(0deg);
+	}*/
+/*}*/
 
+/*საბმენიუს ამბები*/
+/*.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}*/
 .dropdown-menu.show {
   display: block;
 }
+/*საბმენიუს ამბები*/
 
 
 .navigation-a:hover::after{
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 	opacity:1;
 }
 .circle-services:hover::before{
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 	opacity:1;
 }
 
@@ -98,6 +127,7 @@ ul{
     background-color: rgba(52,92,100,.85);
     background-blend-mode: multiply;
     background-clip: padding-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
     border-radius: 0.25rem;
 	margin-top: 41px;
 }
@@ -113,8 +143,6 @@ ul{
     background-color: transparent;
     border: 0;
     text-transform: uppercase;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .dropdown-item:hover, .dropdown-item:focus{
@@ -122,15 +150,17 @@ ul{
     text-decoration: none;
     background-color: transparent;
 }
-
+/*.dropdown-item.active, .dropdown-item:active{
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+}*/
 
 .logo{
 	width: 150px;
 }
 .social-icon{
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 .navigation-a{
 	color: #345c64;
@@ -151,15 +181,9 @@ ul{
 	margin-top: -1.5em;
     margin-left: -3.6em;
     border-radius: 50%;
-    -webkit-transform: scale(.2);
-        -ms-transform: scale(.2);
-            transform: scale(.2);
+    transform: scale(.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-work::after{
 	content: "";
@@ -170,15 +194,9 @@ ul{
 	margin-top: -1.50em;
     margin-left: -3.4em;
     border-radius: 50%;
-    -webkit-transform: scale(.2);
-        -ms-transform: scale(.2);
-            transform: scale(.2);
+    transform: scale(.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-branding::after{
 	content: "";
@@ -189,15 +207,9 @@ ul{
 	margin-top: -1.5em;
     margin-left: -4.25em;
     border-radius: 50%;
-    -webkit-transform: scale(.2);
-        -ms-transform: scale(.2);
-            transform: scale(.2);
+    transform: scale(.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-clients::after{
 	content: "";
@@ -208,15 +220,9 @@ ul{
 	margin-top: -1.5em;
     margin-left: -3.75em;
     border-radius: 50%;
-    -webkit-transform: scale(.2);
-        -ms-transform: scale(.2);
-            transform: scale(.2);
+    transform: scale(.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 .circle-services::before{
 	content: "";
@@ -227,15 +233,9 @@ ul{
 	margin-top: -1.5em;
     margin-left: -.5em;
     border-radius: 50%;
-    -webkit-transform: scale(0.2);
-        -ms-transform: scale(0.2);
-            transform: scale(0.2);
+    transform: scale(0.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
 }
 
 .circle-contacts::after{
@@ -247,36 +247,27 @@ ul{
 	margin-top: -1.5em;
     margin-left: -4.2em;
     border-radius: 50%;
-    -webkit-transform: scale(.2);
-        -ms-transform: scale(.2);
-            transform: scale(.2);
+    transform: scale(.2);
     opacity: 0;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
-    -o-transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
  }
 .social-li{
 	padding-left: 20px;
 	color: #345c64;
 	text-decoration: inherit;
 	font-size: 18px;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .social-a-num{
 	color: #345c64;
 	text-decoration: inherit;
 	font-size: 18px;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .social-li,
 .social-a-num:hover{
+	/*padding-left: 20px;*/
 	color: #36beb8;
 	text-decoration: inherit;
 }
@@ -290,8 +281,10 @@ a:hover{
 .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
+    /*padding-bottom: 0.3125rem;*/
     padding: 1.45rem 0;
     margin-right: 0;
+    /*margin-right: 1rem; ეს არის ლოგოს სტანდარტული margin-ის ზომა.*/
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
@@ -333,6 +326,7 @@ span .ka{
 #parallax-image-1{
 	background-image: url("../img/03.jpg");
 	width: 100%;
+	/*min-height: 80vh;*/
 	padding-bottom: 2rem;
 	background-attachment: fixed;
 	background-position: center;
@@ -340,6 +334,7 @@ span .ka{
 	background-size: cover;
 }
 
+/*animation text opacity (anim on scroll)*/
 .text-left-1{
 	position: relative;
 	font-family: sans-serif;
@@ -355,16 +350,14 @@ span .ka{
 	color: #fff;
 	width: 0%;
 	overflow: hidden;
-	-webkit-transition: 6s;
-	-o-transition: 6s;
 	transition: 6s;
-	-webkit-transform-origin: left;
-	    -ms-transform-origin: left;
-	        transform-origin: left;
+	transform-origin: left;
 }
 .text-left-1[data-scroll="in"]::before{
-	width: 100%;
+	width: 90%;
+	/* 90% ვწერ იმიტომ, რომ 100%-ზე ჰორიზონტალურ სქროლს იკეთებს მობილურზე */
 }
+/*animation text opacity (anim on scroll)*/
 
 .text-p{
 	font-family: sans-serif;
@@ -375,7 +368,7 @@ span .ka{
 	padding-right: 118px;
 	font-size: 29px;
 }
-
+/* slick-slider */
 .arrow-prev{
 	position: absolute;
 	left: -0.125rem;
@@ -404,9 +397,7 @@ span .ka{
 }
 .slick-slider{
 	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	/*display: flex;*/
 	padding-top: 3rem;
 }
 .slick-slider .items{
@@ -416,17 +407,12 @@ span .ka{
 	text-align: center;
 }
 .items img:hover{
-	-webkit-transform: scale(1.15);
-	    -ms-transform: scale(1.15);
-	        transform: scale(1.15);
+	transform: scale(1.15);
 }
 .items img{
 	min-width: 100%;
 	height:100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	-webkit-transition: 1.3s;
-	-o-transition: 1.3s;
+	object-fit: cover;
 	transition: 1.3s;
 }
 .slick-slide{
@@ -450,11 +436,7 @@ span .ka{
 	padding: 0.625rem 0;
     text-align: center;
     margin-top: -1.063rem;
-	-webkit-transform: translateY(-2.12rem);
-	    -ms-transform: translateY(-2.12rem);
-	        transform: translateY(-2.12rem);
-	-webkit-transition: .3s;
-	-o-transition: .3s;
+	transform: translateY(-2.12rem);
 	transition: .3s;
 }
 .slick-slider .branding:hover .slider-branding-txt,
@@ -479,17 +461,13 @@ span .ka{
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	-webkit-transform: translateY(0.27rem);
-	    -ms-transform: translateY(0.27rem);
-	        transform: translateY(0.27rem);
+	transform: translateY(0.27rem);
 }
 .items a:hover{
 	text-decoration: none;
 }
-
+/* slick-slider */
 a{
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .logo-left{
@@ -501,7 +479,7 @@ a{
 	padding-top: 20.5rem;
 	font-family: sans-serif;
 }
-
+/* text animation */
 .text-animation{
 	padding-top: 6rem;
 	text-transform: uppercase;
@@ -526,29 +504,15 @@ a{
 	font-weight: 700;
 }
 .text-right.anim-br{
-	-webkit-animation-name: anim-br;
-	        animation-name: anim-br;
-	-webkit-animation-duration: 1.68571s;
-	        animation-duration: 1.68571s;
+	animation-name: anim-br;
+	animation-duration: 1.68571s;
 }
-@-webkit-keyframes anim-br{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-br{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-vi{
@@ -557,29 +521,15 @@ a{
 	font-weight: 700;
 }
 .text-right.anim-vi{
-	-webkit-animation-name: anim-vi;
-	        animation-name: anim-vi;
-	-webkit-animation-duration: 1.75555s;
-	        animation-duration: 1.75555s;
+	animation-name: anim-vi;
+	animation-duration: 1.75555s;
 }
-@-webkit-keyframes anim-vi{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-vi{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-pro{
@@ -588,29 +538,15 @@ a{
 	font-weight: 400;
 }
 .text-right.anim-pro{
-	-webkit-animation-name: anim-pro;
-	        animation-name: anim-pro;
-	-webkit-animation-duration: 2s;
-	        animation-duration: 2s;
+	animation-name: anim-pro;
+	animation-duration: 2s;
 }
-@-webkit-keyframes anim-pro{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-pro{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-gr{
@@ -619,29 +555,15 @@ a{
 	font-weight: 700;
 }
 .text-right.anim-gr{
-	-webkit-animation-name: anim-gr;
-	        animation-name: anim-gr;
-	-webkit-animation-duration: 2.2s;
-	        animation-duration: 2.2s;
+	animation-name: anim-gr;
+	animation-duration: 2.2s;
 }
-@-webkit-keyframes anim-gr{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-gr{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-pr{
@@ -650,29 +572,15 @@ a{
 	font-weight: 400;
 }
 .text-right.anim-pr{
-	-webkit-animation-name: anim-pr;
-	        animation-name: anim-pr;
-	-webkit-animation-duration: 2.4s;
-	        animation-duration: 2.4s;
+	animation-name: anim-pr;
+	animation-duration: 2.4s;
 }
-@-webkit-keyframes anim-pr{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-pr{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-so{
@@ -681,29 +589,15 @@ a{
 	font-weight: 700;
 }
 .text-right.anim-so{
-	-webkit-animation-name: anim-so;
-	        animation-name: anim-so;
-	-webkit-animation-duration: 2.6s;
-	        animation-duration: 2.6s;
+	animation-name: anim-so;
+	animation-duration: 2.6s;
 }
-@-webkit-keyframes anim-so{
-	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-so{
 	from{
-		-webkit-transform: translate3d(-250%, 0, 0);
-		        transform: translate3d(-250%, 0, 0);
+		transform: translate3d(-250%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
 .animation-a-ev{
@@ -712,32 +606,18 @@ a{
 	font-weight: 400;
 }
 .text-right.anim-ev{
-	-webkit-animation-name: anim-ev;
-	        animation-name: anim-ev;
-	-webkit-animation-duration: 3.7s;
-	        animation-duration: 3.7s;
+	animation-name: anim-ev;
+	animation-duration: 3.7s;
 }
-@-webkit-keyframes anim-ev{
-	from{
-		-webkit-transform: translate3d(-450%, 0, 0);
-		        transform: translate3d(-450%, 0, 0);
-    	}
-    to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
-    	}
- }
 @keyframes anim-ev{
 	from{
-		-webkit-transform: translate3d(-450%, 0, 0);
-		        transform: translate3d(-450%, 0, 0);
+		transform: translate3d(-450%, 0, 0);
     	}
     to{
-    	-webkit-transform: translate3d(0, 0, 0);
-    	        transform: translate3d(0, 0, 0);
+    	transform: translate3d(0, 0, 0);
     	}
  }
-
+ /* text animation */
  @media(max-width: 1080px){
 	.logo.text-left{
 		display: none;
@@ -748,10 +628,7 @@ a{
 }
 @media(max-width: 575px){
 	.navigation.d-flex{
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 	}
 }
 @media(min-width: 1199px){
@@ -767,6 +644,7 @@ a{
 		display: none;
 	}
 	.dropdown-toggle::after{
+		/*position: absolute;*/
 		display: inline-block!important;
 		width: 0!important;
 		height: 0!important;
@@ -810,8 +688,6 @@ a{
     	background-color: transparent;
     	border: 0;
     	text-transform: lowercase;
-    	-webkit-transition: 0.3s;
-    	-o-transition: 0.3s;
     	transition: 0.3s;
 	}
 	.navigation-li{
@@ -893,11 +769,10 @@ a{
 		font-size: 23px;
 	}
 	.col-lg-12 .slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		padding-top: 0.27vh!important;
 	}
+	/*animation text opacity (anim on scroll)*/
 	.text-left-1{
 		position: relative;
 		font-family: sans-serif;
@@ -913,16 +788,13 @@ a{
 		color: #fff;
 		width: 0%;
 		overflow: hidden;
-		-webkit-transition: 6s;
-		-o-transition: 6s;
 		transition: 6s;
-		-webkit-transform-origin: left;
-		    -ms-transform-origin: left;
-		        transform-origin: left;
+		transform-origin: left;
 	}
 	.text-left-1[data-scroll="in"]::before{
 		width: 100%;
 	}
+	/*animation text opacity (anim on scroll)*/
  }
 @media(max-width: 768px){
 	.social-fa, .social-num{
@@ -938,11 +810,10 @@ a{
 		font-size: 23px;
 	}
 	.col-lg-12 .slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		padding-top: 0.27vh!important;
 	}
+	/*animation text opacity (anim on scroll)*/
 	.text-left-1{
 		position: relative;
 		font-family: sans-serif;
@@ -958,17 +829,13 @@ a{
 		color: #fff;
 		width: 0%;
 		overflow: hidden;
-		-webkit-transition: 6s;
-		-o-transition: 6s;
 		transition: 6s;
-		-webkit-transform-origin: left;
-		    -ms-transform-origin: left;
-		        transform-origin: left;
+		transform-origin: left;
 	}
 	.text-left-1[data-scroll="in"]::before{
 		width: 100%;
 	}
-
+	/*animation text opacity (anim on scroll)*/
 	.text-right{
 		line-height: 1;
 	}
@@ -983,6 +850,7 @@ a{
 	}
 }
 @media(max-width: 600px){
+		/*animation text opacity (anim on scroll)*/
 	.text-left-1{
 		position: relative;
 		font-family: sans-serif;
@@ -997,16 +865,13 @@ a{
 		color: #fff;
 		width: 0%;
 		overflow: hidden;
-		-webkit-transition: 6s;
-		-o-transition: 6s;
 		transition: 6s;
-		-webkit-transform-origin: left;
-		    -ms-transform-origin: left;
-		        transform-origin: left;
+		transform-origin: left;
 	}
 	.text-left-1[data-scroll="in"]::before{
 		width: 100%;
 	}
+	/*animation text opacity (anim on scroll)*/
 	.text-p{
 		padding-left: 17px;
 		padding-top: 12px;
@@ -1036,9 +901,7 @@ a{
 		font-size: 20px!important;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1110,9 +973,7 @@ a{
 		font-size: 20px;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1176,9 +1037,7 @@ a{
 		font-size: 20px;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1239,9 +1098,7 @@ a{
 		font-size: 20px;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1302,9 +1159,7 @@ a{
 		font-size: 20px;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1365,9 +1220,7 @@ a{
 		font-size: 20px;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1431,9 +1284,7 @@ a{
 		font-size: 19px!important;
 	}
 	.slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		margin-top: -2vh;
 	}
 	.anim-pro{
@@ -1485,15 +1336,14 @@ a{
 	}
 }
 @media(max-width: 1280px){
-		.slick-slider{
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			padding-top: 4.27vh!important;
-		}
+	.slick-slider{
+		/*display: flex;*/
+		padding-top: 4.27vh!important;
+	}
 }
 .navbar-light .navbar-toggler-icon {
   background-image: none;
+  /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");*/
 }
 
 .navbar-toggler {
@@ -1528,30 +1378,52 @@ a{
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-toggler:focus{
+	/*color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);*/
 	outline: #000 1px auto;
+	/*outline-offset: 0.3px;*/
 }
 
+/*ძველი არაანიმირებული ბურგერი.
+როგორც კი გავააქტიურებ ეგრევე გადავა თავის საწყის არაანიმირებულ ბურგერზე ისე, რომ წინას წაშლა არ დამჭირდება?*/
+/*button:focus {
+    outline: 20px dotted;
+    outline: 5px auto -webkit-focus-ring-color;*/
+/*ძველი არაანიმირებული ბურგერი*/
 
+/* ანიმირებული ბურგერი*/
 #wrapper {
+	/*background:#0D6FBA;*/
 	display:inline-block;
+	/*border-radius:500px;*/
+	/*margin: 2px;*/
 	position: relative;
+  	/*padding:50px;*/
 	cursor:pointer;
 }
-
+/*.circle {
+	width:100px;
+	height:100px;
+	position:relative;
+}*/
 .line{
 	position: absolute;
 	height: 3px;
 	width: 60%;
 	background: #808080;
 	border-radius: 8px;
-	-webkit-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
-	-o-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
 	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
-	-webkit-transform: translate3d(-86.5%, 0, 0);
-	        transform: translate3d(-86.5%, 0, 0);
+	transform: translate3d(-86.5%, 0, 0);
 }
 
-
+/*burger-ის 3 line-ის ერთდროული focus/hover */
+/*.navbar-toggler:focus #line{
+	background-color: #000;
+}*/
+/*burger-ის 3 line-ის ერთდროული focus/hover */
 
 .close:hover {
   float: right;
@@ -1578,24 +1450,24 @@ a{
 }
 .icon.close .top {	
 	top:48%;
-	-webkit-transform: translate3d(-86.5%, 0, 0) rotate(45deg);
-	        transform: translate3d(-86.5%, 0, 0) rotate(45deg);
+	transform: translate3d(-86.5%, 0, 0) rotate(45deg);
 	opacity: 1;
 }
 
 
 .icon.close .middle, .icon.close .bottom {
 	top:48%;
-	-webkit-transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
-	        transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
+	transform: translate3d(-86.5%, 0, 0) rotate(-45deg);
 	opacity: 1;
 	z-index: 1;
 }
+/* ანიმირებული ბურგერი*/
 
+/*dropdown-sub-toggler-ი*/
 
-.dropdown-toggle[aria-expanded="true"]:after { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); } .dropdown-toggle:after { -webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+.dropdown-toggle[aria-expanded="true"]:after { transform: rotate(180deg); } /*for the animation*/ .dropdown-toggle:after { transition: 0.3s; }
 
-
+/*dropdown-sub-toggler-ი*/
 
 @media(min-width: 991px){
 	.dropdown-toggle::after{
@@ -1608,7 +1480,6 @@ a{
 		display: none;
 	}
 }
-
 @media(max-width: 991px){
 	.advertising img{
 		display: none!important;
@@ -1625,12 +1496,8 @@ a{
 		padding-bottom: 34px!important;
 	}
 	.row.slogan-1{
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		justify-content: center;
 	}
 	.text-p{
 		font-family: sans-serif;
@@ -1642,12 +1509,10 @@ a{
 		font-size: 23px;
 	}
 	.col-lg-12 .slick-slider{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		/*display: flex;*/
 		padding-top: 0.27vh!important;
 	}
-
+	/*animation text opacity (anim on scroll)*/
 	.text-left-1{
 		position: relative;
 		font-family: sans-serif;
@@ -1663,17 +1528,13 @@ a{
 		color: #fff;
 		width: 0%;
 		overflow: hidden;
-		-webkit-transition: 6s;
-		-o-transition: 6s;
 		transition: 6s;
-		-webkit-transform-origin: left;
-		    -ms-transform-origin: left;
-		        transform-origin: left;
+		transform-origin: left;
 	}
 	.text-left-1[data-scroll="in"]::before{
 		width: 100%;
 	}
-
+	/*animation text opacity (anim on scroll)*/
 	.cta-text{
 		padding-left: 0!important;
 		padding-top: 15px!important;
@@ -1685,64 +1546,42 @@ a{
 		.cta-textline{
 		display: none;
 	}
-
+	/* animation on scroll*/
 	.cta-textline-1.prof{
-		-webkit-transform: translateX(150%);
-		    -ms-transform: translateX(150%);
-		        transform: translateX(150%);
-		-webkit-transition: 5s;
-		-o-transition: 5s;
+		transform: translateX(150%);
 		transition: 5s;
 	}
 	.cta-textline-1.prof[data-scroll="in"]{
-		-webkit-transform: translateX(0);
-		    -ms-transform: translateX(0);
-		        transform: translateX(0);
+		transform: translateX(0);
 	}
 	.cta-textline-1.adver{
-		-webkit-transform: translateX(150%);
-		    -ms-transform: translateX(150%);
-		        transform: translateX(150%);
-		-webkit-transition: 6s;
-		-o-transition: 6s;
+		transform: translateX(150%);
 		transition: 6s;
 	}
 	.cta-textline-1.adver[data-scroll="in"]{
-		-webkit-transform: translateX(0%);
-		    -ms-transform: translateX(0%);
-		        transform: translateX(0%);
+		transform: translateX(0%);
 	}
 	.cta-textline-1.und{
-		-webkit-transform: translateX(150%);
-		    -ms-transform: translateX(150%);
-		        transform: translateX(150%);
-		-webkit-transition: 6.7s;
-		-o-transition: 6.7s;
+		transform: translateX(150%);
 		transition: 6.7s;
 	}
 	.cta-textline-1.und[data-scroll="in"]{
-			-webkit-transform: translateX(0%);
-			    -ms-transform: translateX(0%);
-			        transform: translateX(0%);
-			-webkit-transition: 6.7s;
-			-o-transition: 6.7s;
+			transform: translateX(0%);
 			transition: 6.7s;
 	}
+	/* animation on scroll*/
 }
 
 @media (min-width: 320px){
 .flex-lg-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 	}
 }
 
+
+/*toggler/burger-ის navbar-ი*/
 .social-toggler .d-flex{
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	padding-right: 20px;
 }
 .social-a-num-num.toggler{
@@ -1775,13 +1614,9 @@ span .ka-lang{
 .ka-lang{
 font-size: 14px;
 color: #345c64;
--webkit-transition: 0.3s;
--o-transition: 0.3s;
 transition: 0.3s;
 }
 .fab{
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
 		transition: 0.3s;
 		font-size: 25px;
 		color: #36beb8;
@@ -1795,25 +1630,19 @@ transition: 0.3s;
 		color: #36beb8;
 }
 .social.toggler{
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		align-items: center;
 }
 .social.toggler{
 		padding-left: 20px;
 		color: #345c64;
 		text-decoration: inherit;
 		font-size: 18px;
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
 		transition: 0.3s;
 }
 	.social-a-num-num.toggler{
 	color: #345c64;
 		text-decoration: inherit;
 		font-size: 18px;
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
 		transition: 0.3s;
 }
 
@@ -1825,15 +1654,14 @@ transition: 0.3s;
 .social-a{
 		color: #36beb8;
 }
-
+/*toggler/burger-ის navbar-ი*/
 
 
 .banner img{
 	width: 100%;
 	display: block;
 	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
+	object-fit: cover;
 }
 .row .advertising{
 	padding-left: 0;
@@ -1851,16 +1679,14 @@ transition: 0.3s;
 	padding-right: 47px;
 	padding-top: 49px;
 	padding-bottom: 20px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
+	/*background-color: #e6e7e8;*/
 	font-size: 18px;
 	font-family: sans-serif;
 }
 .slogan h2{
 	font-size: 22px;
 	margin-left: 0;
-	width: -webkit-max-content;
-	width: -moz-max-content;
 	width: max-content;
 	font-weight: 600;
 	color: #39aca7;
@@ -1882,9 +1708,7 @@ transition: 0.3s;
 	margin-left: -0.938rem;
 	}
 	.text-animation{
-		-webkit-transform: translateX(0.938rem);
-		    -ms-transform: translateX(0.938rem);
-		        transform: translateX(0.938rem);
+		transform: translateX(0.938rem);
 	}
 }
 @media (min-width: 1920px){
@@ -1928,11 +1752,12 @@ transition: 0.3s;
 		padding-right: 113px;
 		padding-top: 61px;
 		padding-bottom: 20px;
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
+		/*background-color: #e6e7e8;*/
 		font-size: 18px;
 		font-family: sans-serif;
 	}
+	/*animation text opacity (anim on scroll)*/
 	.text-left-1{
 		position: relative;
 		font-family: sans-serif;
@@ -1948,16 +1773,13 @@ transition: 0.3s;
 		color: #fff;
 		width: 0%;
 		overflow: hidden;
-		-webkit-transition: 6s;
-		-o-transition: 6s;
 		transition: 6s;
-		-webkit-transform-origin: left;
-		    -ms-transform-origin: left;
-		        transform-origin: left;
+		transform-origin: left;
 	}
 	.text-left-1[data-scroll="in"]::before{
 		width: 100%;
 	}
+	/*animation text opacity (anim on scroll)*/
 	.text-p{
 		font-family: sans-serif;
 		color: #606062;
@@ -1974,14 +1796,15 @@ transition: 0.3s;
 		font-size: 2rem!important;
 	}
 }
+/* slogan */
 
+/* slogan-1 */
 .sign-anim img{
 	width: 130px;
 }
+/* anim on scroll*/
 .col-xl-2.sign-anim{
 	max-width: 14.666667%;
-	-webkit-transition: 3s .4s;
-	-o-transition: 3s .4s;
 	transition: 3s .4s;
 	opacity: 0;
 }
@@ -1989,51 +1812,42 @@ transition: 0.3s;
 	max-width: 14.666667%;
 	opacity: 1;
 }
-
+/* anim on scroll*/
 
 .container.slogan-1{
 	padding-left: 116px;
+	/*padding-right: 58px;*/
 	padding-top: 68px;
 	padding-bottom: 54px;
 }
 .row.slogan-1{
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 .cta-text h2{
 	font-size: 1.7rem;
 	color: #727376;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
 	transition: 1s;
 }
+/* animation on scroll*/
 .cta-textline.prof{
-	-webkit-transform: translateX(150%);
-	    -ms-transform: translateX(150%);
-	        transform: translateX(150%);
-	-webkit-transition: 5s;
-	-o-transition: 5s;
+	transform: translateX(150%);
 	transition: 5s;
 }
 .cta-textline.prof[data-scroll="in"]{
-	-webkit-transform: translateX(0);
-	    -ms-transform: translateX(0);
-	        transform: translateX(0);
+	transform: translateX(0);
 }
 .cta-textline.adver{
-	-webkit-transform: translateX(150%);
-	    -ms-transform: translateX(150%);
-	        transform: translateX(150%);
-	-webkit-transition: 6s;
-	-o-transition: 6s;
+	transform: translateX(150%);
 	transition: 6s;
 }
 .cta-textline.adver[data-scroll="in"]{
-	-webkit-transform: translateX(0%);
-	    -ms-transform: translateX(0%);
-	        transform: translateX(0%);
+	transform: translateX(0%);
 }
+/* animation on scroll*/
+
+/* slogan-1 */
+
+/*ჰორიზონტალური სკროლის პრობლემა*/
 .row.advertising{
 		display: -webkit-box;
   		display: -ms-flexbox;
@@ -2049,6 +1863,8 @@ transition: 0.3s;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    /*margin-right: -15px
+    margin-left: -15px bootstrap default*/
     margin-right: 0;
     margin-left: 0;
 }
@@ -2056,8 +1872,11 @@ transition: 0.3s;
 
 .container-fluid {
     width: 100%;
+    /*padding-right: 15px;
+    padding-left: 15px; bootstrap default. სავარაუდოდ ესე უნდა შეიცვალოს 39px 38px?*/
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+/*ჰორიზონტალური სკროლის პრობლემა*/
