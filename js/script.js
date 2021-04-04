@@ -35,14 +35,14 @@ $(function () {
       }
     },
     {
-      breakpoint: 850,
+      breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 481,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -84,3 +84,5 @@ ScrollOut({
 	targets: "h2,.sign-anim"
 })
 /* animation on scroll*/
+
+
