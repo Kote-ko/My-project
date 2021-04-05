@@ -81,7 +81,7 @@ $(function () {
 
 /* animation on scroll*/
 ScrollOut({
-	targets: "h2,.sign-anim"
+	targets: ".text-left-1,.cta-textline.prof,.cta-textline.adver,.cta-textline-1.prof,.cta-textline-1.adver,.cta-textline-1.und,.sign-anim"
 })
 /* animation on scroll*/
 
