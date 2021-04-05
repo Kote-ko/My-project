@@ -81,7 +81,7 @@ $(function () {
 
 /* animation on scroll*/
 ScrollOut({
-	targets: ".text-left-1,.cta-textline.prof,.cta-textline.adver,.cta-textline-1.prof,.cta-textline-1.adver,.cta-textline-1.und,.sign-anim"
+	targets: ".text-left-1,.cta-textline.prof,.cta-textline.advertising,.cta-textline-1.prof,.cta-textline-1.adver,.cta-textline-1.und,.sign-anim"
 })
 /* animation on scroll*/
 
