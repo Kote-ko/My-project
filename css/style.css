@@ -1838,11 +1838,11 @@ transition: 0.3s;
 .cta-textline.prof[data-scroll="in"]{
 	transform: translateX(0);
 }
-.cta-textline.adver{
+.cta-textline.advertising{
 	transform: translateX(150%);
 	transition: 6s;
 }
-.cta-textline.adver[data-scroll="in"]{
+.cta-textline.advertising[data-scroll="in"]{
 	transform: translateX(0);
 }
 /* animation on scroll*/
