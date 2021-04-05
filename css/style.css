@@ -629,6 +629,7 @@ a{
 @media(max-width: 575px){
 	.navigation.d-flex{
 		flex-direction: column;
+		/* flex-direction: column; ბურგერის ნავბარის ვერტიკ. განლაგება */
 	}
 }
 @media(min-width: 1199px){
@@ -1400,6 +1401,7 @@ a{
 	display:inline-block;
 	/*border-radius:500px;*/
 	/*margin: 2px;*/
+	margin-left: -19.9px;
 	position: relative;
   	/*padding:50px;*/
 	cursor:pointer;
@@ -1582,7 +1584,7 @@ a{
 /*toggler/burger-ის navbar-ი*/
 .social-toggler .d-flex{
 	align-items: center;
-	padding-right: 20px;
+	padding-right: 39.9px;
 }
 .social-a-num-num.toggler{
 padding-right: 20px;
