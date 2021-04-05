@@ -1556,11 +1556,11 @@ a{
 	.cta-textline-1.prof[data-scroll="in"]{
 		transform: translateX(0);
 	}
-	.cta-textline-1.adver{
+	.cta-textline-1.advertising{
 		transform: translateX(150%);
 		transition: 6s;
 	}
-	.cta-textline-1.adver[data-scroll="in"]{
+	.cta-textline-1.advertising[data-scroll="in"]{
 		transform: translateX(0);
 	}
 	.cta-textline-1.und{
@@ -1828,7 +1828,7 @@ transition: 0.3s;
 .cta-text h2{
 	font-size: 1.7rem;
 	color: #727376;
-	transition: 1s;
+	/*transition: 1s;*/
 }
 /* animation on scroll*/
 .cta-textline.prof{
