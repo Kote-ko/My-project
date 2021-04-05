@@ -1561,14 +1561,14 @@ a{
 		transition: 6s;
 	}
 	.cta-textline-1.adver[data-scroll="in"]{
-		transform: translateX(0%);
+		transform: translateX(0);
 	}
 	.cta-textline-1.und{
 		transform: translateX(150%);
 		transition: 6.7s;
 	}
 	.cta-textline-1.und[data-scroll="in"]{
-			transform: translateX(0%);
+			transform: translateX(0);
 			transition: 6.7s;
 	}
 	/* animation on scroll*/
@@ -1843,7 +1843,7 @@ transition: 0.3s;
 	transition: 6s;
 }
 .cta-textline.adver[data-scroll="in"]{
-	transform: translateX(0%);
+	transform: translateX(0);
 }
 /* animation on scroll*/
 
