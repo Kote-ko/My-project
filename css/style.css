@@ -1,6 +1,12 @@
 html, body{
+	/*padding-top: 56.5px;*/
 	/*width: 100%;*/
+	overflow-y: initial;
 	overflow-x: hidden!important;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	margin: 0;
 	/* width: 100% მჭირდება ჰორიზონტალური სქროლის გამოსავლენად, overflow-x: hidden მჭირდება ჰორიზონტალური სქროლის გასაუქმებლად */
 }
 ul{
@@ -35,7 +41,8 @@ ul{
 	/* ფეისბუკის მიწევა მარჯვნივ */
 }
 .fixed-top{
-	position: sticky;
+	top: 0;
+	position: fixed;
 	background-color: #fff;
 	/*padding-top: 21px;*/
 }
@@ -631,6 +638,19 @@ a{
 		flex-direction: column;
 		/* flex-direction: column; ბურგერის ნავბარის ვერტიკ. განლაგება */
 	}
+	#banner-1 {
+	    height: 210.896px!important;
+	}
+	#banner-1 .row {
+    	padding-top: 38.5648px!important;
+	}
+	.l-m{
+		margin-top: 31px;
+    	margin-left: -42px;
+	}
+	.banner-1 .t-s {
+    	margin-top: 3.898px;
+    }
 }
 @media(min-width: 1199px){
 	.social-toggler li,
@@ -643,6 +663,10 @@ a{
 	.social-li::after, .social-icon .LangSwitcher-en, .social-icon 
 	.LangSwitcher-ka{
 		display: none;
+	}
+	.collapse.navbar-collapse{
+		margin-left: 0!important;
+		/*toggker-ის navbar-ის margin-ის*/
 	}
 	.dropdown-toggle::after{
 		/*position: absolute;*/
@@ -796,10 +820,34 @@ a{
 		width: 100%;
 	}
 	/*animation text opacity (anim on scroll)*/
+	.l-m .m-s{
+		margin-left: 42px!important;
+		width: 47px!important;
+	}
+	.t-s .t-s{
+		width: 47px!important;
+	}
+	.l-m .l-s{
+		width: 57px!important;
+	}
+	.social-a-tel{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.social-a-mail{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.banner-1 .row{
+		padding-top: 82.5648px!important;
+	}
  }
 @media(max-width: 768px){
 	.social-fa, .social-num{
     	display: none;
+	}
+	.l-s{
+		display: none;
 	}
 	.text-p{
 		font-family: sans-serif;
@@ -888,6 +936,26 @@ a{
 	.anim-ev{
 		margin-top: -8px;
 	}
+}
+@media (max-width: 576px) {
+  	.col-sm-5 {
+  	  -webkit-box-flex: 0;
+  	  -ms-flex: 0 0 41.666667%;
+  	  flex: 0 0 41.666667%;
+  	  max-width: 41.666667%;
+  	}
+  	.col-sm-6 {
+  	  -webkit-box-flex: 0;
+  	  -ms-flex: 0 0 50%;
+  	  flex: 0 0 50%;
+  	  max-width: 50%;
+  	}
+.col-sm-12 {
+  	  -webkit-box-flex: 0;
+  	  -ms-flex: 0 0 100%;
+  	  flex: 0 0 100%;
+  	  max-width: 100%;
+  	}
 }
 @media(max-width: 480px){
 	.text-left-1{
@@ -1336,10 +1404,42 @@ a{
 		padding-top: 8rem;
 	}
 }
+@media(max-width: 1328px){
+	.m-s{
+		margin-left: 77px!important;
+		width: 64px!important;
+	}
+	.t-s{
+		width: 64px!important;
+	}
+	.l-s{
+		width: 91px!important;
+	}
+	.social-a-tel{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.social-a-mail{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.banner-1 .row{
+		padding-top: 67.5648px!important;
+	}
+}
 @media(max-width: 1280px){
 	.slick-slider{
 		/*display: flex;*/
 		padding-top: 4.27vh!important;
+	}
+}
+@media(max-width: 1279px){
+	.banner-1 {
+	    height: 165px!important;
+	    background-color: #353536;
+	}
+	.banner-1 .row {
+	    padding-top: 48.5648px!important;
 	}
 }
 .navbar-light .navbar-toggler-icon {
@@ -1387,7 +1487,10 @@ a{
 	outline: #000 1px auto;
 	/*outline-offset: 0.3px;*/
 }
-
+.collapse.navbar-collapse{
+	margin-left: -19.9px;
+	/*navbar-ის შუა ნაწილის ცენტრისთვის*/
+}
 /*ძველი არაანიმირებული ბურგერი.
 როგორც კი გავააქტიურებ ეგრევე გადავა თავის საწყის არაანიმირებულ ბურგერზე ისე, რომ წინას წაშლა არ დამჭირდება?*/
 /*button:focus {
@@ -1401,7 +1504,6 @@ a{
 	display:inline-block;
 	/*border-radius:500px;*/
 	/*margin: 2px;*/
-	margin-left: -19.9px;
 	position: relative;
   	/*padding:50px;*/
 	cursor:pointer;
@@ -1572,6 +1674,28 @@ a{
 			transition: 6.7s;
 	}
 	/* animation on scroll*/
+	.m-s{
+		margin-left: 59px!important;
+		width: 52px!important;
+		margin-top: 7.898px;
+	}
+	.t-s{
+		width: 52px!important;
+	}
+	.l-s{
+		width: 68px!important;
+	}
+	.social-a-tel{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.social-a-mail{
+		font-family: "COMPCTAN";
+		font-size: 4vw!important;
+	}
+	.banner-1 .row {
+	    padding-top: 53.5648px!important;
+	}
 }
 
 @media (min-width: 320px){
@@ -1584,7 +1708,7 @@ a{
 /*toggler/burger-ის navbar-ი*/
 .social-toggler .d-flex{
 	align-items: center;
-	padding-right: 39.9px;
+	padding-right: 20px;
 }
 .social-a-num-num.toggler{
 padding-right: 20px;
@@ -1657,8 +1781,6 @@ transition: 0.3s;
 		color: #36beb8;
 }
 /*toggler/burger-ის navbar-ი*/
-
-
 .banner img{
 	width: 100%;
 	display: block;
@@ -1882,3 +2004,56 @@ transition: 0.3s;
     margin-left: auto;
 }
 /*ჰორიზონტალური სკროლის პრობლემა*/
+.banner-1{
+	height: 210.896px;
+	background-color: #353536;
+}
+.banner-1 .row{
+	padding-top: 48.5648px;
+}
+.banner-1 .t-s{
+	margin-top: 3.898px;
+}
+.t-s{
+	width: 96px;
+	vertical-align: middle;
+	border-style: none;
+}
+.social-a-tel{
+	font-family: "COMPCTAN";
+	font-size: 3.6rem;
+	margin-left: 20px;
+	color: #bdbfc1;
+	vertical-align: -webkit-baseline-middle;
+	transition: .2s;
+}
+.social-a-tel:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.social-a-mail{
+	font-family: "COMPCTAN";
+	font-size: 3.6rem;
+	margin-left: 20px;
+	vertical-align: -webkit-baseline-middle;
+	color: #bdbfc1;
+	transition: .2s;
+}
+.social-a-mail:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.l-s{
+	width: 130px;
+	vertical-align: middle;
+	border-style: none;
+}
+.banner-1 .l-l{
+	padding-left: 43px;
+}
+.m-s{
+	width: 96px;
+	margin-left: 107px;
+	vertical-align: middle;
+	border-style: none;
+}
