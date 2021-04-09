@@ -1,12 +1,8 @@
 html, body{
-	/*padding-top: 56.5px;*/
+	padding-top: 56px;
 	/*width: 100%;*/
-	overflow-y: initial;
 	overflow-x: hidden!important;
-	top: 0;
-	left: 0;
-	box-sizing: border-box;
-	margin: 0;
+	/*overflow-y: hidden;*/
 	/* width: 100% მჭირდება ჰორიზონტალური სქროლის გამოსავლენად, overflow-x: hidden მჭირდება ჰორიზონტალური სქროლის გასაუქმებლად */
 }
 ul{
@@ -41,7 +37,6 @@ ul{
 	/* ფეისბუკის მიწევა მარჯვნივ */
 }
 .fixed-top{
-	top: 0;
 	position: fixed;
 	background-color: #fff;
 	/*padding-top: 21px;*/
@@ -644,8 +639,18 @@ a{
 	#banner-1 .row {
     	padding-top: 38.5648px!important;
 	}
+	.t-s .social-a-tel {
+	    font-size: 1.6rem!important;
+	    margin-left: 20px;
+	    vertical-align: -webkit-baseline-middle;
+	}
+	.l-m .social-a-mail {
+	    font-size: 1.6rem!important;
+	    margin-left: 20px;
+	    vertical-align: -webkit-baseline-middle;
+	}
 	.l-m{
-		margin-top: 31px;
+		margin-top: 25px;
     	margin-left: -42px;
 	}
 	.banner-1 .t-s {
@@ -937,6 +942,17 @@ a{
 		margin-top: -8px;
 	}
 }
+@media (max-width: 500px) {
+	.t-s{
+		-webkit-box-flex: 0!important;
+  	  	-ms-flex: 0 0 100%!important;
+  	  	flex: 0 0 100%!important;
+  	  	max-width: 100%!important;
+	}
+	.l-m{
+		box-sizing: content-box;
+	}
+}
 @media (max-width: 576px) {
   	.col-sm-5 {
   	  -webkit-box-flex: 0;
@@ -950,7 +966,7 @@ a{
   	  flex: 0 0 50%;
   	  max-width: 50%;
   	}
-.col-sm-12 {
+	.col-sm-12 {
   	  -webkit-box-flex: 0;
   	  -ms-flex: 0 0 100%;
   	  flex: 0 0 100%;
@@ -1341,6 +1357,85 @@ a{
 	}
 }
 @media(max-width: 360px){
+	html, body {
+	    padding-top: 36px;
+	    /* width: 100%; */
+	    overflow-x: hidden!important;
+	    /* overflow-y: hidden; */
+	}
+	.navbar-brand {
+	    display: inline-block;
+	    padding-top: 0.3125rem;
+	    padding-bottom: 0.3125rem;
+	    /*padding: -2.55rem 0;*/
+	    margin-right: 0;
+	    font-size: 1.25rem;
+	    line-height: inherit;
+	    white-space: nowrap;
+	}
+	.LangSwitcher-lang::before {
+	    position: absolute;
+	    content: "";
+	    height: 75px!important;
+	    width: 1px;
+	    background-color: #e6e7e8;
+	    top: 0;
+	}
+	.LangSwitcher-ka::after {
+	    position: absolute;
+	    content: "";
+	    height: 75px!important;
+	    width: 1px;
+	    background-color: #e6e7e8;
+	    top: 0;
+	}
+	.navigation-li .navigation-a {
+	    max-width: 992px;
+	    color: #345c64;
+	    text-decoration: inherit;
+	    padding-left: 0;
+	    line-height: 3;
+	    font-size: 15px;
+	    opacity: 1;
+	}
+	.dropdown-menu {
+	    position: relative;
+	    top: 100%;
+	    left: 0;
+	    z-index: 1000;
+	    display: none;
+	    float: left;
+	    min-width: 10rem;
+	    padding: 0;
+	    margin-top: -13px;
+	    line-height: .8;
+	    /*margin: 0 0 0;*/
+	    font-size: 14px;
+	    color: #212529;
+	    text-align: left;
+	    list-style: none;
+	    background-color: rgb(255 255 255);
+	    background-blend-mode: multiply;
+	    background-clip: padding-box;
+	    border: 1px solid rgb(255 255 255);
+	    border-radius: 0.25rem;
+	}
+	/*.dropdown-item {
+	    display: block;
+	    width: 100%;
+	    padding: 0.4rem 1.5rem;
+	    margin-top: -2px;
+	    clear: both;
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #345c64;
+	    text-align: inherit;
+	    white-space: nowrap;
+	    background-color: transparent;
+	    border: 0;
+	    text-transform: lowercase;
+	    transition: 0.3s;
+	}*/
 	.text-left-1{
 		padding-top: 60px;
 		padding-left: 0!important;
