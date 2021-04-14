@@ -468,6 +468,40 @@ span .ka{
 .items a:hover{
 	text-decoration: none;
 }
+
+/*slick-dots*/
+
+/*.slick-dots{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 16px 0;
+	list-style: none;
+	bottom: 40px;
+}
+.slick-dots li{
+	margin: 0 0.25rem;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.slick-dots button{
+	display: block;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button{
+	background-color: tomato;
+}*/
+
+/*slick-dots*/
+
 /* slick-slider */
 a{
 	transition: 0.3s;
@@ -846,6 +880,9 @@ a{
 	.banner-1 .row{
 		padding-top: 82.5648px!important;
 	}
+	div.slogan-2{
+		font-size: 22px!important;
+	}
  }
 @media(max-width: 768px){
 	.social-fa, .social-num{
@@ -972,6 +1009,17 @@ a{
   	  flex: 0 0 100%;
   	  max-width: 100%;
   	}
+  	
+}
+@media (max-width: 570px){
+	.center-block.cn-3{
+	  -webkit-box-flex: 0!important;
+  	  -ms-flex: 0 0 100%!important;
+  	  flex: 0 0 100%!important;
+  	  max-width: 100%!important;
+  	  margin-left: 0;
+  	  margin-top: 69px;
+	}
 }
 @media(max-width: 480px){
 	.text-left-1{
@@ -1359,83 +1407,63 @@ a{
 @media(max-width: 360px){
 	html, body {
 	    padding-top: 36px;
-	    /* width: 100%; */
 	    overflow-x: hidden!important;
-	    /* overflow-y: hidden; */
 	}
 	.navbar-brand {
-	    display: inline-block;
+	    /*display: inline-block;*/
 	    padding-top: 0.3125rem;
 	    padding-bottom: 0.3125rem;
-	    /*padding: -2.55rem 0;*/
 	    margin-right: 0;
-	    font-size: 1.25rem;
+	   /* font-size: 1.25rem;
 	    line-height: inherit;
-	    white-space: nowrap;
+	    white-space: nowrap;*/
 	}
 	.LangSwitcher-lang::before {
-	    position: absolute;
-	    content: "";
+	  /*  position: absolute;
+	    content: "";*/
 	    height: 75px!important;
-	    width: 1px;
+	 /*   width: 1px;
 	    background-color: #e6e7e8;
-	    top: 0;
+	    top: 0;*/
 	}
 	.LangSwitcher-ka::after {
-	    position: absolute;
-	    content: "";
+	  /*  position: absolute;
+	    content: "";*/
 	    height: 75px!important;
-	    width: 1px;
+	 /*   width: 1px;
 	    background-color: #e6e7e8;
-	    top: 0;
+	    top: 0;*/
 	}
 	.navigation-li .navigation-a {
-	    max-width: 992px;
+	  /*  max-width: 992px;
 	    color: #345c64;
 	    text-decoration: inherit;
 	    padding-left: 0;
-	    line-height: 3;
+	    line-height: 3;*/
 	    font-size: 15px;
-	    opacity: 1;
+	    /*opacity: 1;*/
 	}
 	.dropdown-menu {
-	    position: relative;
+	    /*position: relative;
 	    top: 100%;
 	    left: 0;
 	    z-index: 1000;
 	    display: none;
 	    float: left;
 	    min-width: 10rem;
-	    padding: 0;
+	    padding: 0;*/
 	    margin-top: -13px;
 	    line-height: .8;
-	    /*margin: 0 0 0;*/
 	    font-size: 14px;
-	    color: #212529;
+	   /* color: #212529;
 	    text-align: left;
 	    list-style: none;
 	    background-color: rgb(255 255 255);
 	    background-blend-mode: multiply;
 	    background-clip: padding-box;
 	    border: 1px solid rgb(255 255 255);
-	    border-radius: 0.25rem;
+	    border-radius: 0.25rem;*/
 	}
-	/*.dropdown-item {
-	    display: block;
-	    width: 100%;
-	    padding: 0.4rem 1.5rem;
-	    margin-top: -2px;
-	    clear: both;
-	    font-weight: 400;
-	    font-size: 14px;
-	    color: #345c64;
-	    text-align: inherit;
-	    white-space: nowrap;
-	    background-color: transparent;
-	    border: 0;
-	    text-transform: lowercase;
-	    transition: 0.3s;
-	}*/
 	.text-left-1{
 		padding-top: 60px;
 		padding-left: 0!important;
@@ -1526,6 +1554,9 @@ a{
 	.slick-slider{
 		/*display: flex;*/
 		padding-top: 4.27vh!important;
+	}
+	.slogan-2{
+		font-size: 36px!important;
 	}
 }
 @media(max-width: 1279px){
@@ -2151,4 +2182,146 @@ transition: 0.3s;
 	margin-left: 107px;
 	vertical-align: middle;
 	border-style: none;
+}
+.c-l .container{
+	text-align: center;
+}
+.b-l {
+/*  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+.b-l .col-lg-2{
+	padding-top: 40px;
+}
+.c-l img{
+	width: 52%;
+}
+.gmp{
+	width: 70%!important;
+}
+.restart{
+	width: 70%!important;
+}
+.cp{
+	width: 46%!important;
+}
+.qarTuli{
+	width: 76%!important;
+}
+.bayer{
+	width: 72%!important;
+}
+.grilpointi{
+	width: 68%!important;
+}
+.magi{
+	width: 68%!important;
+}
+.geovisit{
+	width: 68%!important;
+}
+.adbdi{
+	width: 68%!important;
+}
+.agri{
+	width: 68%!important;
+}
+.konkurencia{
+	width: 42%!important;
+}
+.banner-2{
+	background-image: url("../img/burtebi.jpg");
+	padding-top: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slogan-2{
+	box-sizing: border-box;
+	background-color: #999999;
+	padding: 40px 40px;
+	color: #345c64;
+	font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+}
+@media(max-width: 1024px){
+	.slogan-2{
+		font-size: 27px!important;
+	}
+}
+.social-f-3{
+	background-color: #353536;
+}
+.r-3{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.l-3 img{
+	width: 212px;
+}
+.cn-3{
+	padding-top: 9px;
+}
+.rt-3{
+	padding-top: 9px;
+}
+.l-3 ul{
+	color: #fff;
+}
+.cn-3 h2{
+	color: #36beb8;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 400;
+}
+.l-3 ul{
+	margin-top: 53px;
+}
+.cn-3 ul{
+	color: #fff;
+}
+.cn-3 a{
+	color: #fff;
+}
+.cn-3 a:hover{
+	text-decoration: none;
+}
+.tel-2, .tel-3{
+	padding-left: 53px;
+}
+.rt-3 h2{
+	color: #36beb8;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 400;
+}
+.cn-3 ul, .rt-3 ul{
+	margin-top: 30px;
+}
+@media (max-width: 780px){
+	.center-block {
+	    -webkit-box-flex: 0!important;
+	    -ms-flex: 0 0 33.333333%!important;
+	    flex: 0 0 52.333333%!important;
+	    max-width: 48.333333%!important;
+	    /*margin-left: 72px;*/
+	}
+	.rt-3 {
+    	padding-top: 69px;
+
+	}
+	.left-block {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 33.333333%;
+	    flex: 0 0 51.333333%;
+	    max-width: 69.333333%;
+	}
 }
