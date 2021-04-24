@@ -1,10 +1,11 @@
 $(document).ready(function(){
     $('.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+      $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
     }, function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+      $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
     });  
 });
+
 
 // burger
 $("#wrapper").click( function() {
@@ -35,9 +36,9 @@ $(function () {
       }
     },
     {
-      breakpoint: 1024,
+      breakpoint: 601,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
@@ -84,5 +85,15 @@ ScrollOut({
 	targets: ".text-left-1,.cta-textline.prof,.cta-textline.advertising,.cta-textline-1.prof,.cta-textline-1.advertising,.cta-textline-1.und,.sign-anim"
 })
 /* animation on scroll*/
+
+
+
+baguetteBox.run(".gallery-1", {
+    animation: 'fadeIn',
+    noScrollbars: true
+});
+
+
+
 
 
