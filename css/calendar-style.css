@@ -1,0 +1,13 @@
+.gallery-1-img a{
+	cursor: pointer!important;
+}
+.full-image img{
+	cursor: auto!important;
+}
+.full-image{
+	cursor: pointer!important;
+}
+embed{
+	width: 100%!important;
+	height: 931px!important;
+}
