@@ -90,7 +90,8 @@ ScrollOut({
 
 baguetteBox.run(".gallery-1", {
     animation: 'fadeIn',
-    noScrollbars: false
+    noScrollbars: false,
+    buttons: true
 });
 
 
