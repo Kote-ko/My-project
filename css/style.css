@@ -841,7 +841,7 @@ a{
  @media(max-width: 800px){
  	.article-1-title p {
 	    padding: 25px 16px!important;
-	    margin: 0 -25px;
+	    margin: 0 0;
 	}
 	.ar-1-gall-1 {
     	padding: 0 15px!important;
@@ -1011,6 +1011,11 @@ a{
 	    padding-bottom: 14%!important;
 	    padding-left: 32px;
 	    padding-right: 32px;
+	}
+	.baguetteBox-button svg {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
 	}
 }
 @media(max-width: 767px){
@@ -3211,7 +3216,7 @@ article img{
   top: 50%;
   top: calc(50% - 30px);
   width: 44px;
-  height: 60px;
+  height: 0;
   /* height: 0; ისრის ბოქსის დამალვა. გამოჩენა height: 60px. თუ მინდა გავაუქმო ბოქსის ბორდერის ფოკუსი მივმართო bootstrap-ს button:focus. */
 }
  .baguetteBox-button#close-button{
