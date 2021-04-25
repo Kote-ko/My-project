@@ -3211,7 +3211,7 @@ article img{
   top: 50%;
   top: calc(50% - 30px);
   width: 44px;
-  height: 0;
+  height: 60px;
   /* height: 0; ისრის ბოქსის დამალვა. გამოჩენა height: 60px. თუ მინდა გავაუქმო ბოქსის ბორდერის ფოკუსი მივმართო bootstrap-ს button:focus. */
 }
  .baguetteBox-button#close-button{
@@ -3224,6 +3224,16 @@ article img{
 }
  .baguetteBox-button:focus, .baguetteBox-button:hover{
     background-color: rgba(50, 50, 50, 0);
+}
+.baguetteBox-button {
+    background-color: rgba(50,50,50,0);
+    background-color: rgba(50,50,50,0);
+    color: rgba(50,50,50,0);
+    font: 1.6em sans-serif;
+}
+button:focus {
+     outline: 0 dotted; 
+     outline: 0 auto -webkit-focus-ring-color; 
 }
 
 svg:hover line{
