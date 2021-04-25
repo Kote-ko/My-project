@@ -3187,7 +3187,9 @@ article img{
 .gallery-1-img a{
 	cursor: zoom-in;
 }
+
 /* baguetteBox */
+
 .full-image img{
 	cursor: auto;
 }
@@ -3209,7 +3211,7 @@ article img{
   top: 50%;
   top: calc(50% - 30px);
   width: 44px;
-  height: 0;
+  height: 60px;
   /* height: 0; ისრის ბოქსის დამალვა. გამოჩენა height: 60px. თუ მინდა გავაუქმო ბოქსის ბორდერის ფოკუსი მივმართო bootstrap-ს button:focus. */
 }
  .baguetteBox-button#close-button{
@@ -3232,13 +3234,6 @@ svg:hover polyline{
     stroke: red;
 } ისრების და იქსის ფერის შეცვლა */
 
-/* ისრების და იქსის შეცვლა ხდება js-ში ცოდის მეშვეობით */
+/* ისრების და იქსის შეცვლა ხდება js-ში კოდის მეშვეობით */
 
 /* baguetteBox */
-
-
-/* video */
-
-
-
-/* video */
