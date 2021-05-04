@@ -7,6 +7,13 @@ $(document).ready(function(){
 });
 
 
+// როცა href არ მუშაობს dropdown-toggle-ზე 
+$('#menu-main > li > .dropdown-toggle').click(function () {
+    window.location = $(this).attr('href');
+});
+// როცა href არ მუშაობს dropdown-toggle-ზე
+
+
 // burger
 $("#wrapper").click( function() {
   $(".icon").toggleClass("close");
@@ -93,8 +100,4 @@ baguetteBox.run(".gallery-1", {
     noScrollbars: false,
     buttons: true
 });
-
-
-
-
 
