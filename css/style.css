@@ -2898,9 +2898,9 @@ article img{
 .container.gallery{
 	max-width: 1140px;
 }
-.gallery article{
+/*.gallery article{
 	padding: inherit;
-}
+}*/
 .gm-p{
 	text-align: center;
 }
