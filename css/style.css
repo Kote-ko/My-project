@@ -866,6 +866,10 @@ a{
 	.navbar .serv:hover .circle-services{
 		color: #345c64;
 	}
+	.navbar .serv:hover .dropdown-toggle::after{
+		color: #36beb8;
+		z-index: 1;
+	}
  	.logo.text-left{
 		display: none;
 	}
@@ -1978,7 +1982,7 @@ a{
 	    float: left;
 	    min-width: 10rem;
 	    padding: 0;*/
-	    margin-top: -63px;
+	    margin-top: -61px;
 	    line-height: .8;
 	    font-size: 14px;
 	   /* color: #212529;
