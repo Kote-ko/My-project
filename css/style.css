@@ -135,7 +135,7 @@ ul{
     background-clip: padding-box;
     /*border: 1px solid rgba(0, 0, 0, 0.15);*/
     border-radius: 0.25rem;
-	margin-top: 43px;
+	margin-top: 42px;
 	margin-left: 10px;
 }
 .dropdown.show{
@@ -797,7 +797,7 @@ a{
 		border-right: 0.3em solid transparent!important;
 		border-bottom: 0!important;
 		border-left: 0.3em solid transparent!important;
-		transform: translate3d(69px, -53px, 0)!important;
+		transform: translate3d(74px, -53px, 0)!important;
 	}
 	.dropdown-menu{
     	position: relative;
@@ -837,7 +837,7 @@ a{
 		border-top: 2px solid #e6e7e8;
 	}
 	.wo, .br, .cl, .se, .co{
-		border-top: 1px solid #e6e7e8;
+		border-top: 1px solid #e6e7e8!important;
 	}
 	.navbar-collapse{
 		margin-top: 6px;
