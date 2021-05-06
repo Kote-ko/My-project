@@ -1994,7 +1994,7 @@ a{
 	    border-radius: 0.25rem;*/
 	}
 	.dropdown-toggle::after{
-		transform: translate3d(70px, -43px, 0)!important;
+		transform: translate3d(70px, -44px, 0)!important;
 	}
 	.text-left-1{
 		padding-top: 60px;
