@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.dropdown').hover(function() {
+    $('.serv').hover(function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
     }, function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
@@ -8,9 +8,9 @@ $(document).ready(function(){
 
 
 // როცა href არ მუშაობს dropdown-toggle-ზე 
-$('#menu-main > li > .dropdown-toggle').click(function () {
-    window.location = $(this).attr('href');
-});
+// $('#menu-main > li > .dropdown-toggle').click(function () {
+//     window.location = $(this).attr('href');
+// });
 // როცა href არ მუშაობს dropdown-toggle-ზე
 
 
