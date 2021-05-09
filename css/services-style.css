@@ -35,20 +35,18 @@
 /* branding-drop */
 
 .back{
-	background-color: #504e4e;
+	padding: 80px 0 0 0;
 }
 
 
 .background-img {
     background-color: #504e4e;
-    height: 88vh;
+    height: 92vh;
     background-image: url("../img/backg-attach-fullhd.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-position-x: 89%;
-    background-position-y: 50px;
 }
 @media(max-width: 1280px){
 	.background-img {
@@ -57,13 +55,11 @@
     	background-repeat: no-repeat;
     	background-position: center;
     	background-size: cover;
-    	background-position-x: 78%;
-    	background-position-y: 50px;
 	}
 	.text-slogan {
 	    font-size: 2rem!important;
 	}
-	.Advertising-text {
+	.advertising-text {
 	    font-size: 1rem!important;
 	    padding-right: 58px!important;
 	    padding-bottom: 167px!important;
@@ -89,35 +85,136 @@
 	.text-slogan {
 	    font-size: 1.5rem!important;
 	}
-	.Advertising-text {
+	.advertising-text {
 	    font-size: 1rem!important;
 	    padding-right: 0!important;
 	    line-height: 1.4;
 	}
-}
-.back {
-    padding: 80px 0 245px 0;
 }
 .text-slogan{
 	font-size: 3rem;
     color: #fff;
     font-weight: 600;
 }
-.Advertising-text{
+.advertising-text{
 	color: #fff;
     font-size: 1.2rem;
     padding-right: 199px;
     padding-bottom: 30px;
 }
-@media(max-width: 1520px){
-	.text-slogan, .Advertising-text{
+
+@media(max-width: 1540px){
+	.text-slogan, .advertising-text{
 	    margin-left: 15px;
 	}
 }
 @media(max-width: 1199px){
-	.text-slogan, .Advertising-text{
+	.text-slogan, .advertising-text{
 	    margin-left: 0;
 	}
 }
 
 /* branding-drop */
+
+/* video */
+.back-1{
+	padding: 80px 0 0 0;
+}
+.background-img-1 {
+    background-color: #504e4e;
+    height: 88vh;
+    background-image: url("../img/backg-attach-fullhd-04.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.advertising-text-0{
+	color: #fff;
+    font-size: 1.2rem;
+    padding-right: 199px;
+}
+.advertising-text-1{
+	color: #fff;
+    font-size: 1.2rem;
+    padding-right: 199px;
+    padding-bottom:52px;
+}
+@media(max-width: 1540px){
+	.text-slogan, .advertising-text-1, .advertising-text-0{
+	    margin-left: 15px;
+	}
+}
+@media(max-width: 1280px){
+	.text-slogan {
+	    font-size: 2rem!important;
+	}
+	.advertising-text-0 {
+	    font-size: 1rem!important;
+	    padding-right: 58px!important;
+	    padding-bottom: 167px!important;
+	}
+	.advertising-text-1 {
+	    font-size: 1rem!important;
+	    padding-right: 58px!important;
+	    padding-bottom: 167px!important;
+	    margin-top: -158px
+	}
+}
+@media(max-width: 1199px){
+	.text-slogan, .advertising-text-1, .advertising-text-0{
+	    margin-left: 0;
+	}
+}
+@media(max-width: 991px){
+	.background-img-1 {
+	    background-image: url("../img/background-attachment-991-05.jpg");
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+    	background-position-y: 67px;
+	}
+	.back-1{
+		background-color: rgba(0,0,0,0);
+	}
+	.advertising-text-1, .advertising-text-0{
+		padding-right: 0!important;
+	}
+}
+/* video */
+
+/* graphic design */
+.background-img-2 {
+    background-color: #504e4e;
+    height: 88vh;
+    background-image: url("../img/backg-attach-fullhd-06.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width: 1280px){
+	.background-img-2 {
+		background-image: url("../img/backg-attach-hd-07.png");
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+}
+@media(max-width: 991px){
+	.background-img-2 {
+	    background-image: url("../img/background-attachment-991-08.jpg");
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+
+}
+
+/* graphic design */
+
+
+
