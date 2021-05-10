@@ -66,13 +66,19 @@
 	}
 }
 @media(max-width: 991px){
+	.div-2 h1 {
+	    box-sizing: border-box;
+	    font-size: 1.6rem;
+	    padding: 35px 0 30px 40px;
+	    font-weight: 400;
+	    color: #606062;
+	}
 	.background-img {
-	    background-image: url("../img/background-attachment-991-03.jpg");
+	    background-image: linear-gradient(rgba(80,78,79,.5),rgba(80,78,79,.5)), url("../img/background-attachment-991.jpg");
 		background-attachment: fixed;
     	background-repeat: no-repeat;
     	background-position: center;
     	background-size: cover;
-    	background-position-y: 67px;
 	}
 	.back{
 		background-color: rgba(0,0,0,0);
@@ -168,7 +174,7 @@
 }
 @media(max-width: 991px){
 	.background-img-1 {
-	    background-image: url("../img/background-attachment-991-05.jpg");
+	    background-image: linear-gradient(rgba(80,78,79,.5),rgba(80,78,79,.5)), url("../img/background-attachment-991-05.jpg");
 		background-attachment: fixed;
     	background-repeat: no-repeat;
     	background-position: center;
@@ -205,16 +211,53 @@
 }
 @media(max-width: 991px){
 	.background-img-2 {
-	    background-image: url("../img/background-attachment-991-08.jpg");
+	    background-image: linear-gradient(rgba(80,78,79,.5),rgba(80,78,79,.5)), url("../img/background-attachment-991-08.jpg");
 		background-attachment: fixed;
     	background-repeat: no-repeat;
     	background-position: center;
     	background-size: cover;
 	}
-
 }
 
 /* graphic design */
 
 
+@media(max-width: 428px){
+	.div-2 h1 {
+	    box-sizing: border-box;
+	    font-size: 1.6rem;
+	    padding: 35px 0 30px 14px;
+	    font-weight: 400;
+	    color: #606062;
+	}
+}
 
+/* event-management */
+.background-img-3 {
+    background-color: #504e4e;
+    height: 88vh;
+    background-image: url("../img/backg-attach-fullhd-09.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width: 1280px){
+	.background-img-3 {
+		background-image: url("../img/backg-attach-hd-10.png");
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+}
+@media(max-width: 991px){
+	.background-img-3 {
+	    background-image: linear-gradient(rgba(80,78,79,.5),rgba(80,78,79,.5)), url("../img/background-attachment-991-11.jpg");
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+}
+/* event-management */
