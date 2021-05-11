@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>social-media - limbus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/baguetteBox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/services-style.css">
+</head>
+<body>
+  <header id="navigation" class="container-max-fluid fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <!-- თუ მინდა შევცვალო toggler-ის გამოჩენის რეზოლუცია navbar-expand-lg-ის ნაცვლად ვწერ xl-ს...-->
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="img/mediaart logo.svg"></a>
+     <!-- toggler/burger-ის navbar-ი -->
+      <nav class="social-toggler d-flex ml-auto">
+     <!-- როცა მინდა navbar-ის რაიმე ელემენტი toggler-ის გვერდით იყოს და არა ცენტრში ვამატებ ml-auto-ს. აგრეთვე როცა მინდა toggler-ის გვერდით რაიმე ელემენტი დავამატო toggler-ის გამოჩენის რეზოლუციის ცვლილებისას, social-toggler ml-auto-ს ვამატებ d-flex-ს. შემდეგ navbar-ში გამეორებულ ელემენტს დავმალავ @media-ას მეშვეობით.-->
+        <ul class="social-toggler d-flex flex-md-row toggler">
+          <li class="social-fa toggler">
+            <a href="#" class="social-a-fa toggler"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="social-num toggler">
+            <a href="tel:+995599941330" class="social-a-num-num toggler">(+995)599941330</a>
+          </li>
+        <ul class="LangSwitcher-lang toggler">
+          <li class="LangSwitcher-en-lang social toggler">
+            <span class="en">EN</span>
+          <li class="LangSwitcher-ka social toggler">
+            <span class="ka-lang toggler">
+              <a href="#" class="ka-lang">KA</a>
+            </span>
+          </li>
+        </ul>
+        </ul>
+      </nav>
+        <!-- toggler/burger-ის navbar-ი -->
+      <div id="wrapper">
+        <div class="circle icon">
+           <!-- <div id="wrapper">, <div class="circle icon, <span class="line top">, <spclass="line middle"> და <span class="line bottom"> დამატებული ანიმირებული ბურგერისთვის. -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             <span class="line top" id="line"></span>
+             <span class="line middle" id="line"></span>
+             <span class="line bottom" id="line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul id="menu-main" class="navigation d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column mx-auto roboto-font">
+         <li class="navigation-li ab">
+          <a href="about.html" class="navigation-a circle-about">About</a>
+         </li>
+         <li class="navigation-li wo">
+          <a href="work.html" class="navigation-a circle-work">Work</a>
+         </li>
+         <li class="navigation-li br">
+          <a href="#" class="navigation-a circle-branding">Branding</a>
+         </li>
+         <li class="navigation-li cl">
+          <a href="clients.html" class="navigation-a circle-clients">Clients</a>
+         </li>
+         <div class="serv">
+           <li class="navigation-li se">
+            <a href="services.html" class="navigation-a circle-services">Services</a>
+           </li>
+           <li class="navigation-li nav-item dropdown bt">
+            <a class="nav-link dropdown-toggle navigation-a" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item Branding" href="branding-drop.html">Branding</a>
+               <a class="dropdown-item" href="video.html">Video Production</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+               <a class="dropdown-item" href="graphic-design.html">Graphic Design</a>
+               <a class="dropdown-item" href="event-management.html">Event Management</a>
+               <a class="dropdown-item" href="social-media.html">Social Media</a>
+               <a class="dropdown-item" href="print.html">Print</a>
+               <a class="dropdown-item" href="#">Radio Jingle</a>
+               <a class="dropdown-item" href="#">Outdoor</a>
+             </div>
+           </li>
+         </div>
+         <li class="navigation-li circle co">
+          <a href="#" class="navigation-a circle-contacts">Contacts</a>
+        </ul>
+        <ul class="social-icon d-flex flex-lg-row flex-md-column flex-sm-column">
+         <li class="social-li-fa">
+          <a href="#" class="social-a"><i class="fab fa-facebook-square"></i></a>
+         </li>
+         <li class="social-li">
+          <a href="tel:+995599941330" class="social-a-num">(+995)599941330</a>
+         </li>
+         <ul class="LangSwitcher">
+            <li class="LangSwitcher-en social-li">
+             <span class="en">EN</span>
+            <li class="LangSwitcher-ka social-li">
+             <span class="ka">
+              <a href="#" class="ka">KA</a>
+             </span>
+            </li>
+         </ul>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<section class="background-img-4 background-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 back">
+        <h2 class="text-slogan">Social Media</h2>
+          <p class="advertising-text-0">Social media is one of the most important marketing tools of the modern world. You can establish a direct connection with existing and potential customers. Social media and general digital marketing (facebook, instagram, google, gmail, youtube etc.) gives us the ability to communicate with the customer with simple, efficient and effective tools that play one of the most important roles in service or product success.</p>
+          <p class="advertising-text-1">By analyzing your brand needs, we can determine your target audience, content, delivery channels. We know exactly how to use social media for your business success.</p>
+      </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 img">
+        </div>
+    </div>
+  </div>
+</section>
+<section class="container-max-fluid slogan-3">
+   <div class="row slog-3">
+     <div class="col-lg-6 div-1">
+     </div>
+     <div class="col-lg-6 div-2">
+       <h1>A modern social media marketing strategy create amazing content and focused on attracting people with the quality of its substance.</h1>
+     </div>
+   </div>
+</section>
+<section id="parallax-image-1">
+  <div class="container image-text">
+    <div class="row">
+      <div class="col-md-12 align-self-left-1">
+        <h2 class="text-left-1" data-text="Ideas‎&#160that&#160grow‎&#160brands">Ideas that grow brands</h2>
+      </div>
+      <div class="col-md-12 align-self-left-1">
+        <p class="text-p">The prospect of a growing Media Art success is based on innovative trends of service, which, in turn, is equipped with effective management and team of professionals</p>
+      </div>
+    </div>
+   </div>
+   <div class="container slick">
+    <div class="row slick-slider">
+      <div class="col-lg-12">
+        <div class="slick-slider multiple-items">
+          <div class="items">
+            <a class="branding" href="branding-drop.html"><img src="img/Branding 01.jpg">
+              <div class="slider-branding-txt">
+                <h3>branding</h3>
+              </div></a>
+          </div>
+          <div class="items">
+            <a class="event" href="event-management.html"><img src="img/event management.jpg">
+              <div class="slider-event-txt">
+                <h3>event management</h3>
+              </div></a>
+          </div>
+              <div class="items">
+                <a class="graphic" href="graphic-design.html"><img src="img/graphic design.jpg"><div class="slider-graphic-txt">
+                    <h3>graphic design</h3>
+                  </div></a>
+              </div>
+              <div class="items">
+                <a class="outdoor" href="#"><img src="img/outdoor.jpg"><div class="slider-outdoor-txt">
+                    <h3>outdoor</h3>
+                  </div></a>
+              </div>
+              <div class="items">
+                <a class="print" href="print.html"><img src="img/print.jpg"><div class="slider-print-txt">
+                    <h3>print</h3>
+                  </div></a>
+              </div>
+              <div class="items">
+                <a class="radio" href="#"><img src="img/radio jingle.jpg"><div class="slider-radio-txt">
+                    <h3>radio</h3>
+                  </div></a>
+              </div>
+              <div class="items">
+                <a class="social" href="social-media.html"><img src="img/social media.jpg"><div class="slider-social-txt">
+                    <h3>social</h3>
+                  </div></a>
+              </div>
+              <div class="items">
+                <a class="video" href="video.html"><img src="img/video production.jpg"><div class="slider-video-txt">
+                    <h3>video</h3>
+                  </div></a>
+              </div>
+            </div>
+              <button class="arrow-prev"><img src="img/arrow prev.svg"></button>
+              <button class="arrow-next"><img src="img/arrow next.svg"></button>
+      </div>
+      </div>
+    </div>
+</section>
+<section id="slogan-1" class="slogan-1">
+    <div class="container slogan-1">
+      <div class="row slogan-1">
+        <div class="col-xl-2 col-lg-2 col-md-12 sign-anim"><img src="img/mediaart sign.png"></div>
+    
+        <div class="col-xl-10 col-lg-10 col-md-12 cta-text">
+          <h2 class="cta-textline prof">The professionalism of our team and many years of experience in</h2>
+          <h2 class="cta-textline advertising">the advertising market is undoubtedly successful for your business</h2>
+          <h2 class="cta-textline-1 prof">The professionalism of our team and many years</h2>
+          <h2 class="cta-textline-1 advertising">experience in the advertising market is</h2>
+          <h2 class="cta-textline-1 und">undoubtedly successful for your business</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="banner-1" id="banner-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 t-s">
+          <img class="t-s" src="img/phone.svg">
+          <a href="tel:2 36 38 01" class="social-a-tel">2 36 38 01</a>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 l-m">         
+          <img class="l-s" src="img/medraart red.svg">
+          <img class="m-s" src="img/mail.svg">
+          <a href="mailto:office@mediaart.ge" class="social-a-mail">office@mediaart.ge</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="c-l">
+    <div class="container">
+      <div class="row b-l">
+        <div class="col-lg-2 col-md-3 col-sm-6 psp-sign">
+          <img src="img/psp sign.png">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 n-h">
+          <img src="img/new hospitals.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 psp-ins">
+          <img src="img/psp insurance.png">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 gmp">
+          <img class="gmp" src="img/gmp.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 egis">
+          <img src="img/egis.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 krka">
+          <img src="img/krka.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 solgar">
+          <img src="img/solgar.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 ip">
+          <img src="img/ip.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 auto">
+          <img src="img/auto.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 daCa">
+          <img src="img/daCa.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 restart">
+          <img class="restart" src="img/restart.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 innotech">
+          <img src="img/innotech.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 vichy">
+          <img src="img/vichy.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 esthederm">
+          <img src="img/esthederm.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 sebamed">
+          <img src="img/sebamed.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 la-roche">
+          <img src="img/la roche.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 caudalie">
+          <img src="img/caudalie.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 ziaja">
+          <img src="img/ziaja.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 bioderma">
+          <img src="img/bioderma.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 ip-uriage">
+          <img src="img/uriage.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 alix-avien">
+          <img src="img/alix avien.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 walmark">
+          <img src="img/walmark.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 bayer">
+          <img class="bayer" src="img/bayer.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 astellas">
+          <img src="img/astellas.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 cp">
+          <img class="cp" src="img/cp.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 qarTuli">
+          <img class="qarTuli" src="img/qarTuli.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 maka">
+          <img src="img/maka.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 amvilab">
+          <img src="img/amvilab.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 grilpointi">
+          <img class="grilpointi" src="img/grilpointi.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 bela">
+          <img src="img/bela.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 meidani">
+          <img src="img/meidani.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 konkurencia">
+          <img class="konkurencia" src="img/konkurencia.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 innoteam">
+          <img src="img/innoteam.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 agri">
+          <img class="agri" src="img/agri.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 magi">
+          <img class="magi" src="img/magi.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 bakoma">
+          <img src="img/bakoma.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 pala">
+          <img src="img/pala.png">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 geovisit">
+          <img class="geovisit" src="img/geovisit.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 lepetit">
+          <img src="img/lepetit.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 beauty">
+          <img src="img/beauty.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 adbdi">
+          <img class="adbdi" src="img/adbdi.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="banner-2"></div>
+  <div class="slogan-2">Most important thing is to improve your business everyday</div>
+  <footer class="social-f-3">
+    <div class="container c-3">
+      <div class="row r-3">
+        <div class="left-block col-lg-4 col-md-4 col-sm-4 l-3">
+          <img src="img/mediaart logo gray.svg">
+          <div>
+            <ul>
+              <li>4a, Pekini st., Office 2,</li>
+              <li>Tbilisi, Georgia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="center-block col-lg-4 col-md-4 col-sm-6 cn-3">
+          <h2>Contact</h2>
+          <div>
+            <ul>
+              <li>Phone:
+                <a href="tel:+995577410717">(+995)577 41 07 17</a>
+               </li>
+              <li class="tel-2">
+                <a href="tel:+995322363801">(+995 32) 2 36 38 01</a>
+              </li>
+              <li class="tel-3">
+                <a href="tel:+995322363801">(+995 32) 2 36 96 42</a>
+              </li>
+              <li>Email:
+                <a href="mailto:office@mediaart.ge">office@mediaart.ge</a>
+              </li>
+              <li>
+               Director: Ketevan Kristesashvili
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="righ-block col-lg-4 col-md-4 rt-3">
+          <h2>Social Media</h2>
+          <ul>
+            <li>
+               <a href="javascript:void(0)" class="social-r-3-fa"><i class="fab fa-facebook-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+        
+<script src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/scroll-out.js"></script>
+<script type="text/javascript" src="js/baguetteBox.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- სკრიპტების თანმიმდევრობა უნდა იყოს დაცული. bootstrap.min.js popper.min.js-ის ზევით იყო და dropdown-ი არ მუშაობდა! -->
+
+
+</body>
+</html>
