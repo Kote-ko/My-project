@@ -389,4 +389,61 @@
 	height: 90vh;
 	display: block;
 }
+.adress{
+	font-size: 17px;
+}
+.tel{
+	font-size: 17px;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.tel-0{
+	font-size: 17px;
+	margin-bottom: 0;
+}
+.tel-1{
+	font-size: 17px;
+	margin-bottom: 0;
+}
+.mail{
+	font-size: 17px;
+	margin-top: 30px;
+}
+.dir{
+	font-size: 17px;
+	margin-top: 30px;
+}
+.mt-4 a{
+	color: #212529;
+}
+.mt-4 a:hover{
+	text-decoration: none;
+}
+label{
+	font-size: 17px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #36beb8;
+    border-color: #36beb8;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #345c64;
+    border-color: #3c5b61;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #36beb8;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(54, 190, 184, 0.25);
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: .5;
+}
+/*.formus{
+	background-image: linear-gradient(to right, transparent, #ededed);
+}*/
 /* contact */
