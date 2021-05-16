@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'COMPCTAN';
-    src: url('../fonts/COMPCTAN.eot');
-    src: url('../fonts/COMPCTAN.eot') format('embedded-opentype'),
-         url('../fonts/COMPCTAN.woff2') format('woff2'),
-         url('../fonts/COMPCTAN.woff') format('woff'),
-         url('../fonts/COMPCTAN.ttf') format('truetype'),
-         url('../fonts/COMPCTAN.svg#COMPCTAN') format('svg');
-}
