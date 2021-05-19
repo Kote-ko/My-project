@@ -799,6 +799,9 @@ a{
 		border-left: 0.3em solid transparent!important;
 		transform: translate3d(74px, -53px, 0)!important;
 	}
+	.dropdown-toggle[aria-expanded="true"]:after{
+		transform: translate3d(74px, -53px, 0) rotate(180deg)!important;
+	}
 	.dropdown-menu{
     	position: relative;
     	top: 100%;
@@ -1672,6 +1675,9 @@ a{
 	.dropdown-toggle::after{
 		transform: translate3d(65px, -44px, 0)!important;
 	}
+	.dropdown-toggle[aria-expanded="true"]:after{
+		transform: translate3d(65px, -44px, 0) rotate(180deg)!important;
+	}
 }
 @media(max-width: 428px){
 	.text-left-1{
@@ -2252,15 +2258,6 @@ a{
 }
 /* ანიმირებული ბურგერი*/
 
-/*dropdown-sub-toggler-ი*/
-
-.dropdown-toggle[aria-expanded="true"]:after{
-	transform: rotate(180deg);
-	}.dropdown-toggle:after{
-		transition: 0.3s;
-	}
-
-/*dropdown-sub-toggler-ი*/
 #menu-main{
 	/*margin-top: 30px;*/
 }
