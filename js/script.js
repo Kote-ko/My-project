@@ -23,6 +23,7 @@ $("#wrapper").click( function() {
 
 
 // slick-slider (carousel)
+
 $(function () {
 	$('.multiple-items').slick({
   		 slidesToShow: 4,
@@ -32,6 +33,8 @@ $(function () {
   		 autoplaySpeed: 1000,
   		 speed: 2500,
        waitForAnimate: false,
+       variableWidth: false,
+       centerMode: false,
        infinite: true,
   		 dots: false,
   		 prevArrow: ".arrow-prev",
@@ -70,8 +73,11 @@ $(function () {
     // settings: "unslick"
     // instead of a settings object
   ]
+
 	});
+  $('.multiple-items').slick('setPosition');
 });
+
 // slick-slider (carousel)
 
 
