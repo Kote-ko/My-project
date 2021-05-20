@@ -7,6 +7,7 @@ $(document).ready(function(){
 });
 
 
+
 // როცა href არ მუშაობს dropdown-toggle-ზე 
 // $('#menu-main > li > .dropdown-toggle').click(function () {
 //     window.location = $(this).attr('href');
@@ -30,6 +31,7 @@ $(function () {
   		 autoplay: true,
   		 autoplaySpeed: 1000,
   		 speed: 2500,
+       waitForAnimate: false,
        infinite: true,
   		 dots: false,
   		 prevArrow: ".arrow-prev",
