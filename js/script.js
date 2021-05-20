@@ -33,8 +33,6 @@ $(function () {
   		 autoplaySpeed: 1000,
   		 speed: 2500,
        waitForAnimate: false,
-       variableWidth: false,
-       centerMode: false,
        infinite: true,
   		 dots: false,
   		 prevArrow: ".arrow-prev",
