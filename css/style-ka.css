@@ -164,6 +164,17 @@
  	.text-right.anim-ev {
 	    margin-top: -12px!important;
 	}
+    .text-p {
+        padding-left: 17px;
+        padding-top: 4px!important;
+        padding-right: 22px;
+        font-size: 20px!important;
+    }
+    .align-self-left-1 .text-left-1 {
+        padding-top: 60px;
+        padding-left: 17px!important;
+        font-size: 6.5vw;
+    }
 }
 @media(max-width: 428px){
 	.text-right.anim-gr {
@@ -178,6 +189,11 @@
 	.slogan .text-slogan {
 	    font-size: 21px!important;
 	}
+    .align-self-left-1 .text-left-1 {
+        padding-top: 60px;
+        padding-left: 6px!important;
+        font-size: 6.5vw;
+    }
 }
 @media(min-width: 1390px){
     .navigation-a {
@@ -423,5 +439,73 @@
     }
     .text-right.anim-ev {
         margin-top: 0px;
+    }
+    .slogan {
+        padding-left: 20px;
+        padding-right: 113px;
+        padding-top: 61px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        /* background-color: #e6e7e8; */
+        font-size: 18px;
+        font-family: 'FiraGO';
+    }
+    .text-left-1 {
+        position: relative;
+        font-family: sans-serif;
+        color: rgba(255,255,255,0);
+        padding-top: 60px;
+        padding-left: 104px!important;
+        font-size: 64px!important;
+        font-weight: 600;
+    }
+}
+.slogan {
+    padding-left: 20px;
+    padding-right: 47px;
+    padding-top: 49px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    /* background-color: #e6e7e8; */
+    font-size: 18px;
+    font-family: 'FiraGO';
+}
+.text-left-1{
+    position: relative;
+    font-family: 'FiraGO';
+    color: rgba(255,255,255,0);
+    padding-top: 106px;
+    padding-left: 120px;
+    font-size: 4.5vw;
+    font-weight: 600;
+}
+.text-left-1::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0%;
+    overflow: hidden;
+    transition: 6s;
+    transform-origin: left;
+}
+.text-left-1[data-scroll="in"]::before{
+    width: 100%;
+}
+@media(max-width: 991px){
+    .text-left-1 {
+        position: relative;
+        font-family: "FiraGO";
+        color: rgba(255,255,255,0);
+        padding-top: 60px;
+        padding-left: 27px!important;
+        font-size: 4.5vw!important;
+        font-weight: 600;
+    }
+}
+@media(max-width: 360px){
+    .align-self-left-1 .text-left-1 {
+        padding-top: 60px;
+        padding-left: 0!important;
+        font-size: 6.5vw;
     }
 }

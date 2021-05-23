@@ -407,7 +407,7 @@ span .ka{
 	transform-origin: left;
 }
 .text-left-1[data-scroll="in"]::before{
-	width: 90%;
+	width: 100%;
 	/* 90% ვწერ იმიტომ, რომ 100%-ზე ჰორიზონტალურ სქროლს იკეთებს მობილურზე */
 }
 /*animation text opacity (anim on scroll)*/
