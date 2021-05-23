@@ -7,3 +7,63 @@
          url('../fonts/COMPCTAN.ttf') format('truetype'),
          url('../fonts/COMPCTAN.svg#COMPCTAN') format('svg');
 }
+
+@font-face {
+    font-family: 'BPGDejaVuSansExtraLightFutura';
+    src: url('../fonts/BPGDejaVuSansExtraLightFutura.eot');
+    src: url('../fonts/BPGDejaVuSansExtraLightFutura.eot') format('embedded-opentype'),
+         url('../fonts/BPGDejaVuSansExtraLightFutura.woff2') format('woff2'),
+         url('../fonts/BPGDejaVuSansExtraLightFutura.woff') format('woff'),
+         url('../fonts/BPGDejaVuSansExtraLightFutura.ttf') format('truetype'),
+         url('../fonts/BPGDejaVuSansExtraLightFutura.svg#BPGDejaVuSansExtraLightFutura') format('svg');
+}
+
+@font-face {
+    font-family: 'BPGDejaVuSansCndFtr';
+    src: url('../fonts/BPGDejaVuSansCndFtr.eot');
+    src: url('../fonts/BPGDejaVuSansCndFtr.eot') format('embedded-opentype'),
+         url('../fonts/BPGDejaVuSansCndFtr.woff2') format('woff2'),
+         url('../fonts/BPGDejaVuSansCndFtr.woff') format('woff'),
+         url('../fonts/BPGDejaVuSansCndFtr.ttf') format('truetype'),
+         url('../fonts/BPGDejaVuSansCndFtr.svg#BPGDejaVuSansCndFtr') format('svg');
+}
+
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-Regular.woff2"), url("../fonts/FiraGO-regular.woff"), url("../fonts/FiraGO-regular.eot");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-SemiBold.woff2"), url("../fonts/FiraGO-SemiBold.woff"), url("../fonts/FiraGO-SemiBold.eot");
+	font-weight: 600;
+	font-display: swap;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-Bold.woff2"), url("../fonts/FiraGO-Bold.woff"), url("../fonts/FiraGO-Bold.eot");
+	font-weight: 700;
+	font-display: swap;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-Light.woff2"), url("../fonts/FiraGO-Light.woff"), url("../fonts/FiraGO-Light.eot");
+	font-weight: 300;
+	font-display: swap;
+	font-style: thin;
+}
+
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-Medium.woff2"), url("../fonts/FiraGO-Medium.woff"), url("../fonts/FiraGO-Medium.eot");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
