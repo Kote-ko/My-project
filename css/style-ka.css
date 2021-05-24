@@ -166,7 +166,7 @@
 	}
     .text-p {
         padding-left: 17px;
-        padding-top: 4px!important;
+        padding-top: 15px!important;
         padding-right: 22px;
         font-size: 20px!important;
     }
@@ -176,7 +176,60 @@
         font-size: 5vw!important;
     }
 }
+@media(min-width: 429px){
+	.text-left-1-1, .text-left-1-1-1{
+		display: none;
+	}
+}
 @media(max-width: 428px){
+	.text-left-1-1{
+	    position: relative;
+	    font-family: 'FiraGO';
+	    color: rgba(255,255,255,0);
+	    padding-top: 53px;
+	    padding-left: 6px;
+	    font-size: 6.6vw;
+	    font-weight: 600;
+	}
+	.text-left-1-1::before{
+	    content: attr(data-text);
+	    position: absolute;
+	    color: #fff;
+	    width: 0%;
+	    overflow: hidden;
+	    transition: 6s;
+	    transform-origin: left;
+	}
+	.text-left-1-1[data-scroll="in"]::before{
+	    width: 110%;
+	}
+	.text-left-1-1-1{
+	    position: relative;
+	    font-family: 'FiraGO';
+	    color: rgba(255,255,255,0);
+	    padding-top: 0;
+	    padding-left: 6px;
+	    font-size: 6.6vw;
+	    font-weight: 600;
+	    margin-left: -412px;
+	    transform: translateX(-235px);
+	}
+	.text-left-1-1-1::before{
+	    content: attr(data-text);
+	    position: absolute;
+	    color: #fff;
+	    width: 0%;
+	    overflow: hidden;
+	    transition: 6s;
+	    /*transition-delay: 3.6s;*/
+	    transform-origin: left;
+	}
+	.text-left-1-1-1[data-scroll="in"]::before{
+	    width: 105%;
+	}
+	.text-left-1{
+		display: none;
+	}
 	.text-right.anim-gr {
 	    animation-name: anim-gr;
 	    animation-duration: 2.2s;
@@ -193,6 +246,106 @@
         padding-top: 60px;
         padding-left: 6px!important;
         font-size: 6.5vw;
+    }
+}
+@media(max-width: 420px){
+    .text-left-1-1-1{
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-224px);
+    }
+}
+@media(max-width: 414px){
+    .text-left-1-1-1{
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-214px);
+    }
+}
+@media(max-width: 411px){
+    .text-left-1-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-210px);
+    }
+}
+@media(max-width: 390px){
+    .text-left-1-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-178px);
+    }
+}
+@media(max-width: 375px){
+    .text-left-1-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-156px);
+    }
+}
+@media(max-width: 360px){
+    .text-left-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 53px;
+        padding-left: 0;
+        font-size: 6.6vw;
+        font-weight: 600;
+    }
+    .text-left-1-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-139px);
+    }
+}
+@media(max-width: 360px){
+    .text-left-1-1-1 {
+        position: relative;
+        font-family: 'FiraGO';
+        color: rgba(255,255,255,0);
+        padding-top: 0;
+        padding-left: 6px;
+        font-size: 6.6vw;
+        font-weight: 600;
+        margin-left: -412px;
+        transform: translateX(-124px);
     }
 }
 @media(min-width: 1390px){
