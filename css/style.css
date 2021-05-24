@@ -58,10 +58,10 @@ ul{
 		transition:.3s;
 		margin-top:41px;
 	}*/
-	.navbar .nav-item:hover .nav-link{
+	.navbar .serv:hover .circle-services{
 		color: #36beb8;
 	}
-	.navbar .nav-item:hover .nav-link::before{
+	.navbar .serv:hover .circle-services::before{
 		content: "";
 		position: absolute;
 		border: .1em solid #36beb8;
@@ -110,7 +110,12 @@ ul{
 	transform: scale(1);
 	opacity:1;
 }
-
+.dropdown{
+	height: 0;
+}
+.circle{
+	z-index: 1;
+}
 .dropdown-menu{
     position: absolute;
     top: 100%;
@@ -130,7 +135,12 @@ ul{
     background-clip: padding-box;
     /*border: 1px solid rgba(0, 0, 0, 0.15);*/
     border-radius: 0.25rem;
-	margin-top: 41px;
+	margin-top: 42px;
+	margin-left: 10px;
+}
+.dropdown.show{
+display: block!important;
+height: auto!important;
 }
 .dropdown-item{
     display: block;
@@ -163,14 +173,16 @@ ul{
 .social-icon{
 	align-items: center;
 }
+
 .navigation-a{
 	color: #345c64;
 	text-decoration: inherit;
 	padding: 0 20px;
 	font-size: 18px;
 }
+
 .navigation-a:hover{
-    color: #36beb8;
+    color: #36beb8!important;
     text-decoration: inherit;
 }
 .circle-about::after{
@@ -238,7 +250,6 @@ ul{
     opacity: 0;
     transition: transform .3s, opacity .3s;
 }
-
 .circle-contacts::after{
 	content: "";
 	position: absolute;
@@ -396,7 +407,7 @@ span .ka{
 	transform-origin: left;
 }
 .text-left-1[data-scroll="in"]::before{
-	width: 90%;
+	width: 100%;
 	/* 90% ვწერ იმიტომ, რომ 100%-ზე ჰორიზონტალურ სქროლს იკეთებს მობილურზე */
 }
 /*animation text opacity (anim on scroll)*/
@@ -420,6 +431,7 @@ span .ka{
     height: 2.5rem;
     border: none;
     cursor: pointer;
+    transition: .3s;
 }
 .arrow-next{
 	position: absolute;
@@ -430,6 +442,10 @@ span .ka{
     height: 2.5rem;
     border: none;
     cursor: pointer;
+    transition: .3s;
+}
+.arrow-next:hover, .arrow-prev:hover{
+	background-color: #353536;
 }
 .arrow-prev img{
 	width: 70%;
@@ -684,6 +700,7 @@ a{
 .text-right.anim-ev{
 	animation-name: anim-ev;
 	animation-duration: 3.7s;
+	margin-top: -3px;
 }
 @keyframes anim-ev{
 	from{
@@ -755,6 +772,10 @@ a{
 	    padding-left: 0!important;
 	    padding-right: 0!important;
 	}
+	.dropdown-menu{
+		margin-left: 0;
+	}
+
  	#gallery{
 		margin: 0 0!important;
 	}
@@ -766,6 +787,9 @@ a{
 	.collapse.navbar-collapse{
 		margin-left: 0!important;
 		/*toggker-ის navbar-ის margin-ის*/
+	}
+	.dropdown-toggle{
+		margin-left: 0!important;
 	}
 	.dropdown-toggle::after{
 		/*position: absolute;*/
@@ -779,6 +803,10 @@ a{
 		border-right: 0.3em solid transparent!important;
 		border-bottom: 0!important;
 		border-left: 0.3em solid transparent!important;
+		transform: translate3d(74px, -53px, 0)!important;
+	}
+	.dropdown-toggle[aria-expanded="true"]:after{
+		transform: translate3d(74px, -53px, 0) rotate(180deg)!important;
 	}
 	.dropdown-menu{
     	position: relative;
@@ -789,7 +817,7 @@ a{
     	float: left;
     	min-width: 10rem;
     	padding: 0;
-    	margin: 0 0 0;
+    	margin: -73px 0 0 0;
     	font-size: 1rem;
     	color: #212529;
     	text-align: left;
@@ -803,7 +831,7 @@ a{
 	.dropdown-item{
     	display: block;
     	width: 100%;
-    	padding: .7rem 1.5rem;
+    	padding: .2rem 1.5rem;
     	clear: both;
     	font-weight: 400;
     	color: #345c64;
@@ -814,19 +842,20 @@ a{
     	text-transform: capitalize;
     	transition: 0.3s;
 	}
-	.navigation-li{
+	.ab{
 		border-top: 2px solid #e6e7e8;
+	}
+	.wo, .br, .cl, .se, .co{
+		border-top: 1px solid #e6e7e8!important;
 	}
 	.navbar-collapse{
 		margin-top: 6px;
 	}
-	.navigation-li:nth-child(2),
-	.navigation-li:nth-child(3),
-	.navigation-li:nth-child(4),
-	.navigation-li:nth-child(5),
-	.navigation-li:nth-child(6){
-		border-top: 1px solid #e6e7e8;
-	}
+
+/*	.navigation-li:nth-child(5){
+		border-top: 0px solid #e6e7e8!important;
+	}*/
+
 	.navigation-li .navigation-a{
 		max-width: 992px;
 		color: #345c64;
@@ -843,7 +872,12 @@ a{
 	.circle-services::before, .circle-contacts::after, .circle-work::after{
 		display: none;
 	}
-
+	.navbar .serv:hover .circle-services{
+		color: #345c64;
+	}
+	.navbar .serv:hover .dropdown-toggle::after{
+		color: #36beb8;
+	}
  	.logo.text-left{
 		display: none;
 	}
@@ -1515,6 +1549,10 @@ a{
 	}
 }
 @media(max-width: 480px){
+		html, body {
+	    padding-top: 36px;
+	    overflow-x: hidden!important;
+	}
 	.text-left-1{
 		padding-top: 60px;
 		padding-left: 17px;
@@ -1537,7 +1575,7 @@ a{
 		margin-top: -7px;
 	}
 	.anim-ev{
-		margin-top: -10px;
+		margin-top: -9px!important;
 	}
 	.animation-a-br{
 		font-size: 9vw;
@@ -1584,6 +1622,81 @@ a{
 	    padding-left: 9px!important;
 	    padding-top: 15px!important;
 	    text-align: center;
+	}
+		.navbar-brand {
+	    /*display: inline-block;*/
+	    padding-top: 0.3125rem;
+	    padding-bottom: 0.3125rem;
+	    margin-right: 0;
+	   /* font-size: 1.25rem;
+	    line-height: inherit;
+	    white-space: nowrap;*/
+	}
+	.LangSwitcher-lang::before {
+	  /*  position: absolute;
+	    content: "";*/
+	    height: 75px!important;
+	 /*   width: 1px;
+	    background-color: #e6e7e8;
+	    top: 0;*/
+	}
+	.LangSwitcher-ka::after {
+	  /*  position: absolute;
+	    content: "";*/
+	    height: 75px!important;
+	 /*   width: 1px;
+	    background-color: #e6e7e8;
+	    top: 0;*/
+	}
+		.navigation-li .navigation-a {
+	  /*  max-width: 992px;
+	    color: #345c64;
+	    text-decoration: inherit;
+	    padding-left: 0;
+	    line-height: 3;*/
+	    font-size: 15px;
+	    /*opacity: 1;*/
+	}
+	.dropdown-item{
+    	display: block;
+    	width: 100%;
+    	padding: .7rem 1.5rem;
+    	clear: both;
+    	font-weight: 400;
+    	color: #345c64;
+    	text-align: inherit;
+    	white-space: nowrap;
+    	background-color: transparent;
+    	border: 0;
+    	text-transform: capitalize;
+    	transition: 0.3s;
+	}
+	.dropdown-menu {
+	    /*position: relative;
+	    top: 100%;
+	    left: 0;
+	    z-index: 1000;
+	    display: none;
+	    float: left;
+	    min-width: 10rem;
+	    padding: 0;*/
+	    margin-top: -61px;
+	    line-height: .8;
+	    font-size: 14px;
+	   /* color: #212529;
+	    text-align: left;
+	    list-style: none;
+	    background-color: rgb(255 255 255);
+	    background-blend-mode: multiply;
+	    background-clip: padding-box;
+	    border: 1px solid rgb(255 255 255);
+	    border-radius: 0.25rem;*/
+	}
+	.dropdown-toggle::after{
+		transform: translate3d(65px, -44px, 0)!important;
+	}
+	.dropdown-toggle[aria-expanded="true"]:after{
+		transform: translate3d(65px, -44px, 0) rotate(180deg)!important;
 	}
 }
 @media(max-width: 428px){
@@ -1909,65 +2022,6 @@ a{
 	}
 }
 @media(max-width: 360px){
-	html, body {
-	    padding-top: 36px;
-	    overflow-x: hidden!important;
-	}
-	.navbar-brand {
-	    /*display: inline-block;*/
-	    padding-top: 0.3125rem;
-	    padding-bottom: 0.3125rem;
-	    margin-right: 0;
-	   /* font-size: 1.25rem;
-	    line-height: inherit;
-	    white-space: nowrap;*/
-	}
-	.LangSwitcher-lang::before {
-	  /*  position: absolute;
-	    content: "";*/
-	    height: 75px!important;
-	 /*   width: 1px;
-	    background-color: #e6e7e8;
-	    top: 0;*/
-	}
-	.LangSwitcher-ka::after {
-	  /*  position: absolute;
-	    content: "";*/
-	    height: 75px!important;
-	 /*   width: 1px;
-	    background-color: #e6e7e8;
-	    top: 0;*/
-	}
-	.navigation-li .navigation-a {
-	  /*  max-width: 992px;
-	    color: #345c64;
-	    text-decoration: inherit;
-	    padding-left: 0;
-	    line-height: 3;*/
-	    font-size: 15px;
-	    /*opacity: 1;*/
-	}
-	.dropdown-menu {
-	    /*position: relative;
-	    top: 100%;
-	    left: 0;
-	    z-index: 1000;
-	    display: none;
-	    float: left;
-	    min-width: 10rem;
-	    padding: 0;*/
-	    margin-top: -13px;
-	    line-height: .8;
-	    font-size: 14px;
-	   /* color: #212529;
-	    text-align: left;
-	    list-style: none;
-	    background-color: rgb(255 255 255);
-	    background-blend-mode: multiply;
-	    background-clip: padding-box;
-	    border: 1px solid rgb(255 255 255);
-	    border-radius: 0.25rem;*/
-	}
 	.text-left-1{
 		padding-top: 60px;
 		padding-left: 0!important;
@@ -2224,20 +2278,15 @@ a{
 }
 /* ანიმირებული ბურგერი*/
 
-/*dropdown-sub-toggler-ი*/
-
-.dropdown-toggle[aria-expanded="true"]:after{
-	transform: rotate(180deg);
-	}
-	.dropdown-toggle:after{
-		transition: 0.3s;
-	}
-
-/*dropdown-sub-toggler-ი*/
-
+#menu-main{
+	/*margin-top: 30px;*/
+}
 @media(min-width: 991px){
 	.dropdown-toggle::after{
 		display: none;
+	}
+	.dropdown-toggle{
+		/*margin-left: -103px;*/
 	}
 	.social-toggler{
 		display: none;
@@ -2535,7 +2584,7 @@ transition: 0.3s;
 		font-size: 2.2rem;
 		padding-top: 36.5rem;
 		margin-left: -0.938rem;
-		}
+	}
 	.text-animation{
 		padding-top: 7rem;
 	}
