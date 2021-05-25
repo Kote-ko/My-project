@@ -30,8 +30,8 @@ $(function () {
   		 slidesToScroll: 1,
   		 arrows: true,
   		 autoplay: true,
-  		 autoplaySpeed: 2000,
-  		 speed: 500,
+  		 autoplaySpeed: 1000,
+  		 speed: 2500,
        waitForAnimate: true,
        infinite: true,
   		 dots: false,
@@ -73,7 +73,7 @@ $(function () {
   ]
 
 	});
-  $('.multiple-items').slick('setPosition');
+  // $('.multiple-items').slick('setPosition') ანიმაციის რეფრეშისთვის?
 });
 
 // slick-slider (carousel)
@@ -95,7 +95,7 @@ $(function () {
 
 /* animation on scroll*/
 ScrollOut({
-	targets: ".text-left-1,.cta-textline.prof,.cta-textline.advertising,.cta-textline-1.prof,.cta-textline-1.advertising,.cta-textline-1.und,.sign-anim"
+	targets: ".text-left-1,.text-left-1-1,.text-left-1-1-1,.cta-textline.prof,.cta-textline.advertising,.cta-textline-1.prof,.cta-textline-1.advertising,.cta-textline-1.und,.sign-anim"
 })
 /* animation on scroll*/
 
@@ -106,4 +106,3 @@ baguetteBox.run(".gallery-1", {
     noScrollbars: false,
     buttons: true
 });
-
