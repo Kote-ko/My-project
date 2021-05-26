@@ -91,6 +91,9 @@
 	.animation-a-ev {
 	    font-size: 5vw!important;
 	}
+    .cta-text .prof, .cta-text .advertising {
+        font-size: 1.9vw!important;
+    }
 }
 @media(max-width: 768px){
 	.text-right.anim-ev {
@@ -464,6 +467,13 @@
         font-size: 4.5vw;
         font-weight: 600;
     }
+    .cta-text h2{
+        font-family: "FiraGO";
+        font-size: 1.5rem!important;
+        color: #727376;
+        font-weight: 400;
+        /*transition: 1s;*/
+    }
 }
 .text-left .text-left{
     font-size: 1.8rem;
@@ -486,7 +496,7 @@
     }
     .text-left .text-left{
         font-size: 1.9rem;
-        padding-top: 36.5rem;
+        padding-top: 37.5rem;
         margin-left: -0.938rem;
     }
     .text-animation{
@@ -534,6 +544,11 @@
         padding-left: 104px!important;
         font-size: 64px!important;
         font-weight: 600;
+    }
+    .cta-text h2 {
+        font-family: 'FiraGO';
+        font-weight: 400;
+        font-size: 1.9rem!important;
     }
 }
 .slogan {
@@ -587,6 +602,9 @@
         font-size: 23px;
         /* line-height: 1.3; */
     }
+    .cta-textline-1.prof, .cta-textline-1.advertising, .cta-textline-1.und {
+        font-size: 3.3vw!important;
+    }
 }
 @media(max-width: 600px){
     .text-p {
@@ -598,6 +616,14 @@
         padding-right: 20px;
         font-size: 20px!important;
         /* line-height: 1.3; */
+    }
+}
+@media(max-width: 384px){
+    .align-self-left-1 .text-p {
+        margin-left: -15px;
+        margin-top: -12px;
+        padding-right: 2px!important;
+        font-size: 16px!important;
     }
 }
 @media(max-width: 360px){
@@ -635,4 +661,54 @@
     padding-right: 113px;
     font-size: 23px;
     /*line-height: 1.3;*/
+}
+.slider-branding-txt h3, 
+.slider-event-txt h3, 
+.slider-graphic-txt h3, 
+.slider-outdoor-txt h3, 
+.slider-print-txt h3, 
+.slider-radio-txt h3, 
+.slider-social-txt h3, 
+.slider-video-txt h3 {
+    font-family: "FiraGO";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #fff;
+    font-feature-settings: "case";
+    text-decoration: none;
+    transform: translateY(0.27rem);
+}
+.cta-text h2{
+    font-family: "FiraGO";
+    font-size: 1.7rem;
+    color: #727376;
+    font-weight: 400;
+    /*transition: 1s;*/
+}
+.slogan-2 {
+    font-family: "FiraGO";
+    box-sizing: border-box;
+    background-color: #999999;
+    padding: 40px 40px;
+    color: #345c64;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 400;
+}
+.dir, .adr, .tl, .ml{
+    font-family: "FiraGO";
+}
+.cn-3 h2 {
+    font-family: "FiraGO";
+    color: #36beb8;
+    font-feature-settings: "case";
+    font-size: 26px;
+    font-weight: 400;
+}
+.rt-3 h2 {
+    font-family: "FiraGO";
+    color: #36beb8;
+    font-feature-settings: "case";
+    font-size: 26px;
+    font-weight: 400;
 }
