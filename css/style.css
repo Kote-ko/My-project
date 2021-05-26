@@ -1762,6 +1762,105 @@ a{
 	.col-xl-2.sign-anim{
 		max-width: 39.666667%!important;
 	}
+	.c-l img {
+	    width: 66%!important;
+	}
+	.c-l .new{
+		width: 82%!important;
+	}
+	.c-l .gmp{
+		width: 92%!important;
+	}
+	.c-l .egs{
+		width: 86%!important;
+	}
+	.c-l .krk{
+		width: 86%!important;
+	}
+	.c-l .solgar{
+		width: 90%!important;
+	}
+	.c-l .ip{
+		width: 86%!important;
+	}
+	.c-l .auto{
+		width: 94%!important;
+	}
+	.c-l .restart {
+	    width: 94%!important;
+	}
+	.c-l .bayer {
+	    width: 100%!important;
+	}
+	.c-l .qarTuli{
+	    width: 86%!important;
+	}
+	.c-l .vichy{
+		 width: 86%!important;
+	}
+	.c-l .caudalie{
+		 width: 104%!important
+	}
+	.c-l .bioderma{
+		 width: 96%!important;
+	}
+	.c-l .alix{
+		 width: 92%!important;
+	}
+	.c-l .walmark{
+		 width: 86%!important;
+	}
+	.c-l .astellas{
+		 width: 86%!important;
+	}
+	.c-l .maka{
+		 width: 98%!important;
+	}
+	.c-l .grilpointi{
+		 width: 96%!important;
+	}
+	.c-l .bela{
+		 width: 96%!important;
+	}
+	.c-l .innoteam{
+		 width: 96%!important;
+	}
+	.c-l .agri{
+		 width: 96%!important;
+	}
+	.c-l .magi{
+		 width: 104%!important;
+	}
+	.c-l .bakoma{
+		 width: 94%!important;
+	}
+	.c-l .pala{
+		 width: 94%!important;
+	}
+	.c-l .geovisit{
+		 width: 94%!important;
+	}
+	.c-l .esthederm{
+		 width: 94%!important;
+	}
+	.c-l .sebamed{
+		 width: 94%!important;
+	}
+	.c-l .la-roche{
+		 width: 94%!important;
+	}
+	.c-l .amvilab{
+		 width: 94%!important;
+	}
+	.c-l .lepetit{
+		 width: 80%!important;
+	}
+	.c-l .beauty{
+		 width: 80%!important;
+	}
+	.c-l .adbdi{
+		 width: 100%!important;
+	}
 }
 @media(max-width: 420px){
 	.text-left-1{
