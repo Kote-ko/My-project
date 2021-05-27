@@ -1698,70 +1698,6 @@ a{
 	.dropdown-toggle[aria-expanded="true"]:after{
 		transform: translate3d(65px, -44px, 0) rotate(180deg)!important;
 	}
-}
-@media(max-width: 428px){
-	.text-left-1{
-		padding-top: 60px;
-		padding-left: 6px!important;
-		font-size: 6.5vw;
-	}
-	.text-p{
-		padding-left: 6px!important;
-		padding-top: 12px;
-		padding-right: 22px;
-		font-size: 20px;
-	}
-	.slick-slider{
-		/*display: flex;*/
-		margin-top: -2vh;
-	}
-	.anim-pro{
-		margin-top: -7px;
-	}
-	.anim-pr{
-		margin-top: -7px;
-	}
-	.anim-ev{
-		margin-top: -8px;
-	}
-	.animation-a-br{
-		font-size: 9vw;
-	}
-	.animation-a-vi{
-		font-size: 9vw;
-	}
-	.animation-a-pro{
-		font-size: 6.8vw;
-	}
-	.animation-a-gr{
-		font-size: 9vw;
-	}
-	.animation-a-pr{
-		color: #345c64;
-		font-size: 6.8vw;
-	}
-	.animation-a-so{
-		font-size: 9vw;
-	}
-	.animation-a-ev{
-		font-size: 5.3vw;
-	}
-	.slogan{
-		padding-left: 8px!important;
-		padding-right: 12px!important;
-		padding-top: 30px!important;
-		padding-bottom: 20px!important;
-		font-size: 18px!important;
-	}
-	.text-right{
-		line-height: 0.8;
-	}
-	.text-animation{
-		padding-top: 8rem;
-	}
-	.col-xl-2.sign-anim{
-		max-width: 39.666667%!important;
-	}
 	.c-l img {
 	    width: 66%!important;
 	}
@@ -1860,6 +1796,70 @@ a{
 	}
 	.c-l .adbdi{
 		 width: 100%!important;
+	}
+}
+@media(max-width: 428px){
+	.text-left-1{
+		padding-top: 60px;
+		padding-left: 6px!important;
+		font-size: 6.5vw;
+	}
+	.text-p{
+		padding-left: 6px!important;
+		padding-top: 12px;
+		padding-right: 22px;
+		font-size: 20px;
+	}
+	.slick-slider{
+		/*display: flex;*/
+		margin-top: -2vh;
+	}
+	.anim-pro{
+		margin-top: -7px;
+	}
+	.anim-pr{
+		margin-top: -7px;
+	}
+	.anim-ev{
+		margin-top: -8px;
+	}
+	.animation-a-br{
+		font-size: 9vw;
+	}
+	.animation-a-vi{
+		font-size: 9vw;
+	}
+	.animation-a-pro{
+		font-size: 6.8vw;
+	}
+	.animation-a-gr{
+		font-size: 9vw;
+	}
+	.animation-a-pr{
+		color: #345c64;
+		font-size: 6.8vw;
+	}
+	.animation-a-so{
+		font-size: 9vw;
+	}
+	.animation-a-ev{
+		font-size: 5.3vw;
+	}
+	.slogan{
+		padding-left: 8px!important;
+		padding-right: 12px!important;
+		padding-top: 30px!important;
+		padding-bottom: 20px!important;
+		font-size: 18px!important;
+	}
+	.text-right{
+		line-height: 0.8;
+	}
+	.text-animation{
+		padding-top: 8rem;
+	}
+	.col-xl-2.sign-anim{
+		max-width: 39.666667%!important;
 	}
 }
 @media(max-width: 420px){
