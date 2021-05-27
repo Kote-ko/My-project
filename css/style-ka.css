@@ -638,6 +638,9 @@
         margin-left: -15px;
         font-size: 20px!important;
     }
+    div.slogan-2 {
+	    font-size: 21px!important;
+	}
 }
 
 @media(max-width: 320px){
