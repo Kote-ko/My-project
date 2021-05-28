@@ -108,6 +108,55 @@
         color: #fff;
         text-align: center;
     }
+    article .anticancer-h {
+        font-family: "FiraGO";
+        font-feature-settings: "case";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 16%!important;
+        padding-bottom: 22%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .ma-ka .maka-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 22%!important;
+        padding-bottom: 22%;
+    }
+}
+@media(max-width: 879px){
+    article .anticancer-h {
+        font-family: "FiraGO";
+        font-feature-settings: "case";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 10%!important;
+        padding-bottom: 22%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}@media(max-width: 800px){
+    #anticancer .anticancer-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 8%!important;
+        padding-bottom: 14%!important;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 @media(max-width: 768px){
 	.text-right.anim-ev {
@@ -130,6 +179,29 @@
         text-align: left!important;
         line-height: 2.2;
     }
+    #anticancer .anticancer-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        padding-top: 12%!important;
+        padding-bottom: 14%!important;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    #anticancer .anticancer-h-h2 {
+        padding-top: 35px;
+        transition: .4s;
+        font-weight: 400;
+        font-size: 5.8vw!important;
+    }
+    .magi-h .magi-h-h2 {
+        padding-top: 35px;
+        transition: .4s;
+        color: rgba(0, 0, 0, 0);
+        font-weight: 400;
+        font-size: 6.12vw;
+    }
 }
 @media(max-width: 600px){
 	.text-right.anim-ev {
@@ -137,6 +209,17 @@
 	    animation-duration: 3.7s;
 	    margin-top: -6px!important;
 	}
+    #anticancer .anticancer-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 16%!important;
+        padding-bottom: 14%!important;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 @media(max-width: 480px){
 	.dropdown-item {
@@ -252,6 +335,17 @@
 	.slogan .text-slogan {
 	    font-size: 21px!important;
 	}
+    #anticancer .anticancer-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 12%!important;
+        padding-bottom: 14%!important;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 @media(max-width: 420px){
     .text-left-1-1-1{
@@ -529,6 +623,17 @@
         font-weight: 400;
         /*transition: 1s;*/
     }
+    .anticancer-h {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        font-size: 30px;
+        padding-top: 10%!important;
+        padding-bottom: 22%;
+        padding-left: 58px!important;
+        padding-right: 58px!important;
+    }
 }
 .text-left .text-left{
     font-size: 1.8rem;
@@ -659,6 +764,23 @@
     }
     .cta-textline-1.prof, .cta-textline-1.advertising, .cta-textline-1.und {
         font-size: 3.3vw!important;
+    }
+    .calendar-h {
+        font-family: "FiraGO";
+        font-feature-settings: "case";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        padding-top: 18%;
+        padding-bottom: 22%;
+    }
+    .calendar-h .calendar-h-h2 {
+        padding-top: 35px;
+        transition: .4s;
+        color: rgba(0, 0, 0, 0);
+        font-weight: 400;
+        font-size: 3vw;
     }
 }
 @media(max-width: 600px){
@@ -803,4 +925,224 @@
 .article-2 p {
     font-family: "FiraGO";
     font-size: 1.1rem;
+}
+.gmp-h .gmp-h-h2 {
+    font-family: "FiraGO";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+    font-feature-settings: "case";
+}
+.gmp-h .gmp-h-h2-b {
+    font-family: "FiraGO";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+    font-feature-settings: "case";
+}
+.new-h .new-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+}
+.new-h .new-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.psp-h .psp-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+}
+.psp-h .psp-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.egis-h .egis-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+}
+.egis-h .egis-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.gos-h .gos-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    padding-left: 7px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+}
+.gos-h .gos-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.gos-h {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    font-size: 30px;
+    padding-top: 18%;
+    padding-bottom: 22%;
+}
+.blood-h .blood-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 28px;
+}
+.blood-h .blood-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.calendar-h .calendar-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.calendar-h {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    padding-top: 21%;
+    padding-bottom: 22%;
+}
+.anticancer-h {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    font-size: 30px;
+    padding-top: 19%;
+    padding-bottom: 22%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.anticancer-h .anticancer-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 30px;
+}
+.anticancer-h .anticancer-h-h2-b {
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.egis-h {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    font-size: 30px;
+    padding-top: 22%;
+    padding-bottom: 22%;
+}
+.magi-h {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    padding-top: 25%;
+    padding-bottom: 22%;
+}
+.magi-h .magi-h-h2-b {
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
+}
+.maka-h {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    padding-top: 22%;
+    padding-bottom: 22%;
+}
+.maka-h .maka-h-h2 {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    padding-top: 35px;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 31px;
+}
+.maka-h .maka-h-h2-b {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    margin-top: -28px;
+    color: rgba(0, 0, 0,0);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .4s;
 }
