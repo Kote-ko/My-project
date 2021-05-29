@@ -1246,3 +1246,22 @@
 .ici-h:hover .ici-h-h2-d{
     color: rgba(57, 172, 167, 1);
 }
+.title {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    font-size: 37px;
+    font-weight: 400;
+    color: #8aac8f;
+}
+.article-1-title p {
+    font-family: "FiraGO";
+    padding: 25px 93px;
+}
+.subtitle {
+    font-family: "FiraGO";
+    font-feature-settings: "case";
+    font-size: 33px;
+    font-weight: 400;
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
