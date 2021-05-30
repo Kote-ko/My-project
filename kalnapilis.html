@@ -17,9 +17,12 @@
 <body>
   <header id="navigation" class="container-max-fluid fixed-top">
     <nav class="navbar navbar-expand-xl navbar-light">
+      <!-- თუ მინდა შევცვალო toggler-ის გამოჩენის რეზოლუცია navbar-expand-lg-ის ნაცვლად ვწერ xl-ს...-->
       <div class="container">
         <a class="navbar-brand" href="index.html"><img class="logo" src="img/mediaart logo.svg"></a>
+     <!-- toggler/burger-ის navbar-ი -->
       <nav class="social-toggler d-flex ml-auto">
+     <!-- როცა მინდა navbar-ის რაიმე ელემენტი toggler-ის გვერდით იყოს და არა ცენტრში ვამატებ ml-auto-ს. აგრეთვე როცა მინდა toggler-ის გვერდით რაიმე ელემენტი დავამატო toggler-ის გამოჩენის რეზოლუციის ცვლილებისას, social-toggler ml-auto-ს ვამატებ d-flex-ს. შემდეგ navbar-ში გამეორებულ ელემენტს დავმალავ @media-ას მეშვეობით.-->
         <ul class="social-toggler d-flex flex-md-row toggler">
           <li class="social-fa toggler">
             <a href="#" class="social-a-fa toggler"><i class="fab fa-facebook-square"></i></a>
@@ -32,14 +35,16 @@
             <span class="en">EN</span>
           <li class="LangSwitcher-ka social toggler">
             <span class="ka-lang toggler">
-              <a href="#" class="ka-lang">KA</a>
+              <a href="kalnapilis-ka.html" class="ka-lang">KA</a>
             </span>
           </li>
         </ul>
         </ul>
       </nav>
+        <!-- toggler/burger-ის navbar-ი -->
       <div id="wrapper">
         <div class="circle icon">
+           <!-- <div id="wrapper">, <div class="circle icon, <span class="line top">, <spclass="line middle"> და <span class="line bottom"> დამატებული ანიმირებული ბურგერისთვის. -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
              <span class="line top" id="line"></span>
@@ -49,7 +54,7 @@
         </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul id="menu-main" class="navigation d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column mx-auto roboto-font">
+        <ul id="menu-main" class="navigation d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column mx-auto roboto-font">
          <li class="navigation-li ab">
           <a href="about.html" class="navigation-a circle-about">About</a>
          </li>
@@ -96,7 +101,7 @@
              <span class="en">EN</span>
             <li class="LangSwitcher-ka social-li">
              <span class="ka">
-              <a href="#" class="ka">KA</a>
+              <a href="kalnapilis-ka.html" class="ka">KA</a>
              </span>
             </li>
          </ul>
