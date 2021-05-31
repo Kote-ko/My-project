@@ -666,7 +666,12 @@
         position: absolute;
         padding-top: 14%!important;
         padding-bottom: 22%;
-    } 
+    }
+    .ici-h {
+        position: absolute;
+        padding-top: 20%!important;
+        padding-bottom: 22%;
+    }
 }
 .text-left .text-left{
     font-size: 1.8rem;
