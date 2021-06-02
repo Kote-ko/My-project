@@ -185,6 +185,7 @@
     .text-right-2 {
         text-align: left!important;
         padding-top: 0!important;
+        padding-left: 2px;
         font-family: sans-serif;
         color: #fff;
         font-size: 1.4rem!important;
