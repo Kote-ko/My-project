@@ -409,10 +409,10 @@
 	font-size: 17px;
 	margin-top: 30px;
 }
-.dir{
+/*.dir{
 	font-size: 17px;
 	margin-top: 30px;
-}
+}*/
 .mt-4 a{
 	color: #212529;
 }
@@ -512,3 +512,4 @@ label{
 }
 
 /* egis-calendar */
+
