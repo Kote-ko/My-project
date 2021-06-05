@@ -172,6 +172,7 @@ height: auto!important;
 }
 .social-icon{
 	align-items: center;
+	margin-right: -20px;
 }
 
 .navigation-a{
@@ -310,12 +311,12 @@ span .ka{
 }
 
 .social-li::after{
-	position: absolute;
+	/*position: absolute;
 	content: "";
 	height: 100%;
 	width: 1px;
 	background-color: #e6e7e8;
-	top: 0;
+	top: 0;*/
 }
 .social-li:nth-child(1)::after,
 .social-li:nth-child(3)::after{
@@ -765,6 +766,23 @@ a{
 	}
 }
  @media(max-width: 1199px){
+
+ 	/* burger responsive Slide out Menu with Sub menu */
+ 	.navbar-collapse .nav-bar{
+		overflow-y: auto;
+	}
+	/* burger responsive Slide out Menu with Sub menu */
+
+
+/*.navbar-brand::after {
+    position: absolute;
+    content: "";
+    background: #e6e7e8;
+    height: 1px;
+    top: 111px;
+    left: 16px;
+    right: 16px;
+}*/
  	.blood-h {
 	    font-size: 30px;
 	    padding-top: 18%;
@@ -817,7 +835,7 @@ a{
     	float: left;
     	min-width: 10rem;
     	padding: 0;
-    	margin: -73px 0 0 0;
+    	margin: -65px 0 0 0;
     	font-size: 1rem;
     	color: #212529;
     	text-align: left;
@@ -843,10 +861,10 @@ a{
     	transition: 0.3s;
 	}
 	.ab{
-		border-top: 2px solid #e6e7e8;
+		/*border-top: 2px solid #e6e7e8;*/
 	}
 	.wo, .br, .cl, .se, .co{
-		border-top: 1px solid #e6e7e8!important;
+		/*border-top: 1px solid #e6e7e8!important;*/
 	}
 	.navbar-collapse{
 		margin-top: 6px;
@@ -1781,20 +1799,10 @@ a{
 	    white-space: nowrap;*/
 	}
 	.LangSwitcher-lang::before {
-	  /*  position: absolute;
-	    content: "";*/
-	    height: 75px!important;
-	 /*   width: 1px;
-	    background-color: #e6e7e8;
-	    top: 0;*/
+	    /*height: 75px!important;*/
 	}
 	.LangSwitcher-ka::after {
-	  /*  position: absolute;
-	    content: "";*/
-	    height: 75px!important;
-	 /*   width: 1px;
-	    background-color: #e6e7e8;
-	    top: 0;*/
+	    /*height: 75px!important;*/
 	}
 		.navigation-li .navigation-a {
 	  /*  max-width: 992px;
@@ -1828,7 +1836,7 @@ a{
 	    float: left;
 	    min-width: 10rem;
 	    padding: 0;*/
-	    margin-top: -61px;
+	    margin-top: -55px;
 	    line-height: .8;
 	    font-size: 14px;
 	   /* color: #212529;
@@ -2742,20 +2750,20 @@ span .ka-lang{
 }
 
 .LangSwitcher-lang::before{
-		position: absolute;
+		/*position: absolute;
 		content: "";
 		height:111px;
 		width: 1px;
 		background-color: #e6e7e8;
-		top: 0;
+		top: 0;*/
 }
 .LangSwitcher-ka::after{
-		position: absolute;
+		/*position: absolute;
 		content: "";
 		height: 111px;
 		width: 1px;
 		background-color: #e6e7e8;
-		top: 0;
+		top: 0;*/
 }
 .LangSwitcher-en-lang.toggler{
 		padding-bottom: .5rem!important;
