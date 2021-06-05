@@ -7,6 +7,23 @@ $(document).ready(function(){
 });
 
 
+// burger responsive Slide out Menu with Sub menu 
+var fixHeight = function() {
+  $(".nav-bar").css(
+    "max-height",
+    document.documentElement.clientHeight - 150
+    );
+};
+fixHeight();
+$(window).resize(function(){
+  fixHeight();
+});
+$(".navbar .navbar-toggler").on("click", function(){
+  fixHeight();
+});
+// burger responsive Slide out Menu with Sub menu
+
+
 
 // როცა href არ მუშაობს dropdown-toggle-ზე 
 // $('#menu-main > li > .dropdown-toggle').click(function () {
@@ -106,3 +123,4 @@ baguetteBox.run(".gallery-1", {
     noScrollbars: false,
     buttons: true
 });
+
