@@ -1359,3 +1359,17 @@
     font-family: "FiraGO";
     font-weight: 400;
 }
+.adress, .tel, .tel-0, .tel-1, .mail{
+    font-family: "FiraGO";
+    font-weight: 500;
+}
+label{
+    font-family: "FiraGO";
+    font-weight: 400;
+}
+.form-control{
+    font-family: "FiraGO";
+}
+.send{
+    font-family: "FiraGO";
+}
