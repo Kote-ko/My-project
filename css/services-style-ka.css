@@ -1,0 +1,40 @@
+.text-slogan {
+	font-family: "FiraGO";
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+.advertising-text {
+	font-family: "FiraGO";
+	font-weight: 400;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-right: 199px;
+    padding-bottom: 30px;
+    padding-left: 1px;
+}
+@media(max-width: 446px){
+	.advertising-text {
+	    font-size: 0.85rem!important;
+	    padding-right: 0!important;
+	    line-height: 1.4;
+	}
+	.advertising-text-0, .advertising-text-1 {
+	    color: #fff;
+	    font-size: .85rem!important;
+	    padding-right: 199px;
+	    padding-bottom: 0;
+	}
+	.advertising-text-1{
+		margin-top: -172px;
+	}
+}
+.advertising-text-0, .advertising-text-1 {
+	font-family: "FiraGO";
+	font-weight: 400;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-right: 199px;
+    padding-bottom: 0;
+    padding-left: 1px;
+}
