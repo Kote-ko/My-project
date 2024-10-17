@@ -1,9 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
 	margin: 0;
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	/*justify-content: center;*/
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 input{
@@ -15,8 +26,12 @@ img{
 	width: 100%;
 }
 .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .cover{
 	width: 1000px;
@@ -26,7 +41,8 @@ img{
 	width: 1000px;
 	height: 800px;
 	position: relative;
-	perspective: 1500px;
+	-webkit-perspective: 1500px;
+	        perspective: 1500px;
 }
 .page{
 	width: 100%;
@@ -34,9 +50,15 @@ img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	transform-origin: left;
-	transform-style: preserve-3d;
-	transform: rotateX(0deg);
+	-webkit-transform-origin: left;
+	    -ms-transform-origin: left;
+	        transform-origin: left;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transform: rotateX(0deg);
+	        transform: rotateX(0deg);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 	color: #fff;
 }
@@ -51,15 +73,19 @@ img{
 
 .front{
 	background-color: #191966;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .back{
-	transform: rotateX(-180deg);
-	backface-visibility: hidden;
+	-webkit-transform: rotateX(-180deg);
+	        transform: rotateX(-180deg);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
 }
 
 #c1:checked ~ .page-container #p1{
-	transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
+	        transform: rotateX(180deg);
 	z-index: 1;
 }
 
